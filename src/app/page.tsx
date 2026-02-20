@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, Wrench, Shield, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, RotateCcw, DollarSign, Shield } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -17,13 +17,13 @@ export default function HomePage() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-white">Revolutionary</span><br />
-              <span className="gradient-text">Excavator Stabilization</span>
+              <span className="text-white">Turn Your Excavator</span><br />
+              <span className="gradient-text">Without Damaging Ground</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              Advanced ground performance technology designed for Caterpillar mini excavators.
-              Engineered to transform stability, precision, and efficiency on the job site.
+              Patented pivot system for Caterpillar mini excavators that eliminates ground damage during turns,
+              reduces equipment wear and tear, and makes your jobsite safer while saving time and money.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -52,7 +52,7 @@ export default function HomePage() {
               See It In <span className="gradient-text">Action</span>
             </h2>
             <p className="text-xl text-gray-400">
-              Watch how the Excavator Foot transforms ground performance
+              Watch how the Excavator Foot lets you turn without tearing up the ground
             </p>
           </div>
 
@@ -82,31 +82,31 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-yellow-400/50 transition-all">
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6">
+                <RotateCcw className="text-yellow-400" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white">Turn Without Ground Damage</h3>
+              <p className="text-gray-400">
+                Patented pivot system allows excavators to turn in place without tearing up grass, pavement, or delicate surfaces—protecting your jobsite and client property.
+              </p>
+            </div>
+
+            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-yellow-400/50 transition-all">
+              <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6">
+                <DollarSign className="text-yellow-400" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white">Save Time & Money</h3>
+              <p className="text-gray-400">
+                Dramatically reduces wear and tear on tracks and undercarriage components. Less maintenance, longer equipment life, and faster job completion.
+              </p>
+            </div>
+
+            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-yellow-400/50 transition-all">
+              <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6">
                 <Shield className="text-yellow-400" size={24} />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Enhanced Stability</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Safer Jobsite</h3>
               <p className="text-gray-400">
-                Revolutionary design distributes weight evenly, reducing ground pressure and preventing sinking in soft terrain.
-              </p>
-            </div>
-
-            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-yellow-400/50 transition-all">
-              <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6">
-                <Zap className="text-yellow-400" size={24} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Increased Efficiency</h3>
-              <p className="text-gray-400">
-                Minimize repositioning and maximize productivity. Get the job done faster with superior ground contact.
-              </p>
-            </div>
-
-            <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 hover:border-yellow-400/50 transition-all">
-              <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-6">
-                <Wrench className="text-yellow-400" size={24} />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Easy Installation</h3>
-              <p className="text-gray-400">
-                Designed specifically for Cat 302, 305, and 308 models. Simple integration with your existing equipment.
+                Improved operator control and reduced equipment stress means fewer accidents, less damage to surrounding areas, and a safer working environment.
               </p>
             </div>
           </div>
@@ -144,15 +144,15 @@ export default function HomePage() {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Optimized for 2-ton class
+                    Optimized for 2-ton class excavators
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Enhanced maneuverability
+                    Turn in place without ground damage
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Perfect for residential jobs
+                    Perfect for residential and landscaping
                   </li>
                 </ul>
                 <div className="text-center">
@@ -189,15 +189,15 @@ export default function HomePage() {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Ideal for 5-ton operations
+                    Ideal for 5-ton class excavators
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Superior ground pressure distribution
+                    Pivot without tearing up surfaces
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    All-terrain performance
+                    Reduces track wear significantly
                   </li>
                 </ul>
                 <div className="text-center">
@@ -229,15 +229,15 @@ export default function HomePage() {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Heavy-duty 8-ton class
+                    Heavy-duty 8-ton class excavators
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Maximum stability under load
+                    Maximum wear reduction on larger machines
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Commercial-grade performance
+                    Commercial and industrial applications
                   </li>
                 </ul>
                 <div className="text-center">

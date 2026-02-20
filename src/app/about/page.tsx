@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen, Lightbulb, Target } from "lucide-react";
 
 export const metadata = {
   title: "About - Excavator Foot",
-  description: "Learn about the innovation behind the Excavator Foot patented stabilization system",
+  description: "Learn about the innovation behind the Excavator Foot patented pivot system for damage-free turning",
 };
 
 export default function AboutPage() {
@@ -32,13 +32,13 @@ export default function AboutPage() {
                 <span className="text-red-400 font-semibold text-sm">The Challenge</span>
               </div>
               <h2 className="text-4xl font-bold mb-6 text-white">
-                Ground Instability Costs Time and Money
+                Turning Tears Up Ground and Wears Out Equipment
               </h2>
               <p className="text-lg text-gray-300 mb-4">
-                Mini excavators are essential tools for construction, landscaping, and utility work. But on soft or uneven terrain, they face a critical challenge: ground pressure that causes sinking, tipping, and constant repositioning.
+                Mini excavators are essential for construction, landscaping, and utility work. But every time they need to turn, traditional track systems tear up grass, damage pavement, and destroy delicate surfaces—costing contractors time, money, and client relationships.
               </p>
               <p className="text-lg text-gray-300">
-                This instability doesn't just slow down the job—it increases operator fatigue, reduces precision, and can even pose safety risks. The industry needed a better solution.
+                Worse, the constant grinding and pivoting on tracks causes massive wear and tear on the undercarriage, leading to expensive repairs and shortened equipment life. The industry desperately needed a way to turn without the damage.
               </p>
             </div>
             <div className="relative h-96 rounded-xl overflow-hidden glow-yellow">
@@ -71,13 +71,13 @@ export default function AboutPage() {
                 <span className="text-yellow-400 font-semibold text-sm">The Solution</span>
               </div>
               <h2 className="text-4xl font-bold mb-6 text-white">
-                A Revolutionary Stabilization System
+                A Revolutionary Pivot System
               </h2>
               <p className="text-lg text-gray-300 mb-4">
-                The Excavator Foot is a patented ground stabilization system that fundamentally changes how mini excavators interact with terrain. By intelligently distributing weight and increasing surface area contact, it dramatically reduces ground pressure.
+                The Excavator Foot is a patented pivot system that allows mini excavators to turn in place without damaging the ground beneath them. By creating a smooth, controlled rotation point, it eliminates the grinding, tearing action of traditional track turning.
               </p>
               <p className="text-lg text-gray-300 mb-6">
-                The result? Enhanced stability, improved precision, increased productivity, and safer operation—even in challenging conditions.
+                The result? Operators can work on lawns, finished pavement, and delicate surfaces without leaving a mark. Equipment lasts longer with dramatically reduced track and undercarriage wear. Jobs get done faster, safer, and with happier clients.
               </p>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg">
                 <span className="text-gray-400 text-sm">Patent Application:</span>
