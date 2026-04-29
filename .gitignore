@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw footage / source media at repo root (compressed web assets in public/ are tracked)
+/*.mov
+/*.MOV
+/*.mp4
+/*.MP4
+/*.JPG

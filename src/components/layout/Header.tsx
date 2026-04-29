@@ -10,7 +10,8 @@ export function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/#products", label: "Products" },
+    { href: "/#demo", label: "Demo" },
+    { href: "/#validation", label: "Validation" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
@@ -49,7 +50,7 @@ export function Header() {
               href="/contact?inquiry=licensing"
               className="px-6 py-2 bg-yellow-400 text-black font-semibold rounded-lg hover:bg-yellow-500 transition-colors glow-yellow-hover"
             >
-              Licensing Opportunity
+              Request Technical Package
             </Link>
           </div>
 
@@ -81,7 +82,7 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg hover:bg-yellow-500 transition-colors text-center mt-4"
             >
-              Licensing Opportunity
+              Request Technical Package
             </Link>
           </div>
         )}

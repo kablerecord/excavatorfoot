@@ -1,76 +1,112 @@
-# Excavator Foot — Patented Pivot System for Mini Excavators
+# Excavator Foot — Factory-Installable Pivot Technology for Tracked Excavators
 
-> The Excavator Foot is a patented pivot system for Caterpillar mini excavators that allows them to turn in place without damaging the ground beneath them. Patent Application 18/594,097. It eliminates the grinding, tearing action of traditional track turning that destroys lawns, pavement, and delicate surfaces.
+> The Excavator Foot is a patented hydraulic plate-and-turntable mechanism that lets a tracked excavator rotate in place without skid-turning the tracks. It mounts to the underside of the main frame and uses the excavator's own existing rotary motor — anchored via the boom and bucket — to perform the rotation. U.S. Patent Application 18/594,097 has received a non-final office action with allowable subject matter indicated for the apparatus and the excavator-combination claims. The technology is offered for OEM licensing to manufacturers of tracked construction equipment.
 
-## The Problem
+## Positioning
 
-Mini excavators are essential on residential and commercial job sites, but they have a fundamental design flaw: when they turn, their tracks grind against the ground. This causes:
+This is **OEM licensing technology**, not a retail aftermarket product. The Excavator Foot is designed to be a factory-installable option on production tracked excavators in the 2-ton through 12-ton class range. Three working prototypes (on Caterpillar 302, 305, and 308 chassis) have been built and operated to validate the mechanism across machine classes.
 
-- **Lawn destruction** — tracks tear up grass on residential jobs, requiring expensive restoration
-- **Pavement damage** — asphalt and concrete surfaces crack and gouge during turns
-- **Track wear** — the grinding action dramatically accelerates wear on tracks and undercarriage components, increasing maintenance costs
-- **Jobsite liability** — property damage from equipment turning creates disputes with homeowners and property managers
-- **Crew time wasted** — operators must work around turning limitations, adding time to every job
+## The Problem It Solves
 
-Every contractor who has run a mini excavator on a residential job knows this problem. There is no existing aftermarket solution.
+Every tracked excavator on the market has the same physical limitation: to change orientation, the tracks must skid-turn against the ground. This single design flaw produces ongoing operating costs that the OEM does not absorb:
 
-## The Solution
+- **Surface damage** — lawns, asphalt, concrete, pavers, and finished hardscape are gouged on every rotation, with restoration cost borne by the contractor
+- **Undercarriage wear** — skid-turning is the dominant driver of premature track, sprocket, and roller replacement, often the largest non-fuel operating cost on the machine
+- **Restricted addressable jobsites** — finished surfaces, decorative hardscape, and sensitive turf force operators to substitute wheeled equipment, shrinking the market for tracked machines
+- **Liability exposure** — property damage from track-tear is a routine source of disputes in residential, right-of-way, and urban infill work
 
-The Excavator Foot is a pivot system that creates a smooth, controlled rotation point beneath the excavator. Instead of the tracks grinding against the surface, the machine pivots on a single engineered contact point — eliminating surface damage entirely.
+There is no existing factory or aftermarket solution that addresses this at the machine-design level using the host machine's own systems.
 
-### How It Works
+## The Invention
 
-The system attaches to the undercarriage of compatible Caterpillar mini excavators. When the operator needs to turn, the Excavator Foot engages and lifts the tracks slightly off the ground surface, allowing the machine to rotate freely on the pivot point. The result is a zero-damage turn on any surface — grass, asphalt, concrete, pavers, or finished landscaping.
+The Excavator Foot is a hydraulic plate-and-turntable assembly that mounts to the underside of the excavator main frame. It is operated by the existing in-cab control system and integrates with the host machine's hydraulic circuit. The operational sequence is four steps:
 
-### Key Benefits
+1. **Anchor** — the boom is lowered until the bucket engages the ground. The cabin is now mechanically fixed relative to the earth via the boom-bucket-ground chain.
+2. **Lift** — the hydraulic linkage drives the turntable assembly downward. As it contacts the ground, the tracks lift clear and the entire main frame is supported on the foot.
+3. **Rotate** — with the cabin anchored by the bucket, the excavator's own rotary motor spins the main frame and tracks freely on the turntable to any heading.
+4. **Retract** — the foot retracts, the tracks settle on the ground at the new heading, and the bucket releases. Net result: a full reorientation of the machine with zero ground scrub and zero track wear.
 
-- **Zero ground damage** — turn on lawns, driveways, patios, and finished surfaces without leaving marks
-- **Reduced track wear** — eliminating grinding extends track and undercarriage life significantly
-- **Lower maintenance costs** — less wear means fewer replacements and less downtime
-- **Faster job completion** — operators don't need to plan around turning limitations or lay protective materials
-- **Safer jobsite** — improved operator control during turns reduces accident risk
-- **No property damage claims** — eliminate the most common source of contractor-homeowner disputes on excavation jobs
+## Why This Is Hard to Design Around
 
-## Compatible Equipment
+The mechanism uses the excavator's existing rotary motor — not a new powertrain. This is what makes it economically viable as a factory option. But it also creates a physics-based moat:
 
-Currently designed for Caterpillar mini excavators in the 2-ton to 8-ton class:
+Without the bucket-anchor step, firing the rotary motor with the tracks lifted would simply counter-rotate the cabin against the tracks (Newton's third law) — net rotation: zero. The bucket-anchor step is not a design choice. It is a physical requirement of any system that uses the host machine's own rotary motor to perform the rotation.
 
-- **Cat 302** — 2-ton class mini excavator
-- **Cat 305** — 5-ton class mini excavator
-- **Cat 308** — 8-ton class mini excavator
+Any competing implementation that uses a different rotation mechanism (a dedicated turntable motor, for example) adds powertrain cost, hydraulic complexity, and parts count — and still infringes the combination claim. The path of least resistance for an OEM is to license, not design around.
 
-Future compatibility with other manufacturers (Kubota, Bobcat, John Deere, Takeuchi) is planned.
+## Engineering Validation
 
-## Patent Information
+Three working prototypes have been built and operated:
 
-- **Patent Application Number**: 18/594,097
-- **Status**: Patent pending
-- **Inventor**: Kable Record
-- **Type**: Utility patent — mechanical pivot system for tracked construction equipment
+- **2-ton class** — Caterpillar 302 — mechanism geometry validated, operator sequence proven
+- **5-ton class** — Caterpillar 305 — full operational cycle on dirt and pavement, featured in the public demonstration video at https://excavatorfoot.com/#demo
+- **8-ton class** — Caterpillar 308 — production-grade machined parts in final assembly; live demonstration available Q3 2026
+
+The 308 prototype is the size threshold where right-of-way contractors, urban infill builders, and infrastructure crews operate. It is the prototype that demonstrates the mechanism scales to the machine classes OEMs ship in volume.
+
+## Intellectual Property
+
+- **U.S. Patent Application Number**: 18/594,097
+- **Filed**: March 4, 2024 (with priority to provisional 63/598,078 filed November 11, 2023)
+- **Status**: Non-final office action received April 15, 2026; amendment to take indicated allowable subject matter being prosecuted by Patent Agent Bruce A. Lev (Reg. 58,594)
+- **Inventor**: Kable Darren Record
+- **Type**: Utility patent — mechanical / hydraulic pivot system for tracked construction equipment
+
+The patent application includes both an apparatus claim (the mechanism itself) and a combination claim (the excavator + apparatus + four-step operational sequence). A continuation application is planned post-issuance to broaden the ground-engagement language to cover equivalent rotation mechanisms beyond the literal turntable form, closing off remaining design-around space.
+
+## Available Materials
+
+**Public:**
+- Demonstration video on the Caterpillar 305 prototype
+- Operational sequence overview
+- Patent application number and prosecution status
+
+**Available under mutual NDA:**
+- Engineering drawings, dimensions, and tolerances
+- Hydraulic schematics and integration specifications
+- Bills of materials and supplier information
+- Full claim chart and prosecution history
+- Royalty model and territory pricing
+- Manufacturing cost analysis
+- Detailed 308 demonstration video
+
+A mutual NDA template is available for download at https://excavatorfoot.com/contact (PDF and editable Word formats). Evaluators may also use their own NDA template if preferred.
+
+## Licensing Targets
+
+The technology is targeted for licensing to manufacturers of tracked construction equipment. Primary candidates include:
+
+- Caterpillar Inc. (specifically the Building Construction Products division)
+- Bobcat Company (Doosan)
+- Kubota Tractor Corporation
+- John Deere Construction & Forestry
+- Komatsu Ltd.
+- Volvo Construction Equipment
+- Hitachi Construction Machinery
+- JCB
+- Takeuchi
+- Yanmar
+
+Exclusive territory and field-of-use licensing options are available.
 
 ## About the Inventor
 
-Kable Record has 14+ years of experience in the construction industry, starting at age 10 in his father's concrete business. He identified this problem from firsthand experience operating mini excavators on residential job sites. The Excavator Foot was designed by a contractor for contractors — not by an engineer who has never run a machine on a real job.
+Kable Darren Record is a U.S.-based construction entrepreneur and inventor. The Excavator Foot grew out of years of running heavy equipment on residential, right-of-way, and commercial jobsites — and the observation that the most expensive moments on a jobsite are often the ones the equipment cannot avoid.
 
-Kable is also the founder of OSQR (osqr.ai), an AI operating system for business operations, and the author of "The Fourth Generation Formula," a book about building businesses that last across generations.
+In addition to this work, Kable is the founder of OSQR (https://osqr.ai), an AI operating system for small businesses, and the author of the Fourth Gen Formula (https://fourthgenformula.com), a framework for generational wealth-building.
 
-## Business Opportunity
-
-The Excavator Foot represents a licensing and manufacturing opportunity for equipment manufacturers. The mini excavator market is growing, and no existing solution addresses the ground damage problem. Potential partners include:
-
-- **Caterpillar** and authorized Cat dealers
-- **Aftermarket equipment manufacturers**
-- **Equipment rental companies** (United Rentals, Sunbelt, BlueLine)
-- **Construction equipment distributors**
+His operating preference is to license patented mechanical inventions to OEMs that can integrate them into existing manufacturing programs, rather than build a parallel aftermarket business around them. That is the path being pursued for this technology.
 
 ## Contact
 
 - **Website**: https://excavatorfoot.com
-- **Inquiries**: Available via contact form at excavatorfoot.com/contact
-- **Inquiry types**: General questions, licensing opportunities, purchase inquiries, technical specifications, partnership discussions
+- **Email**: contact@excavatorfoot.com
+- **Two paths**: (a) schedule a demo (no NDA required) — see the prototype operate and ask engineering questions live; (b) request the technical package (NDA-gated) — drawings, claim chart, royalty model, and manufacturing cost analysis
+
+Initial response within 5 business days for qualified inquiries.
 
 ## Links
 
-- [Home](https://excavatorfoot.com): Product overview, benefits, and compatible models
-- [About](https://excavatorfoot.com/about): The problem, the solution, and the inventor's story
-- [Contact](https://excavatorfoot.com/contact): Licensing, purchase, and partnership inquiries
+- [Home](https://excavatorfoot.com): Demo video, problem framing, the four-step mechanism, engineering validation across three prototypes, OEM licensing positioning
+- [About](https://excavatorfoot.com/about): Origin story, three-prototype build history, IP position breakdown (apparatus claim, combination claim, continuation strategy), inventor background
+- [Contact](https://excavatorfoot.com/contact): NDA download (PDF and Word), demo request and licensing/technical-package request flows
