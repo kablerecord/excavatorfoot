@@ -17,48 +17,29 @@ function ContactForm() {
     inquiry: inquiryType === "licensing" ? "licensing" : inquiryType === "demo" ? "demo" : "general",
     ndaStatus: "not-yet",
     message: "",
+    honeypot: "",
   });
 
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
+    setErrorMessage("");
 
-    const subjectMap: Record<string, string> = {
-      licensing: "Excavator Foot — Technical Package Request (Licensing)",
-      demo: "Excavator Foot — Demo Request",
-      general: "Excavator Foot — General Inquiry",
-      partnership: "Excavator Foot — Partnership Inquiry",
-    };
-    const subject = subjectMap[formData.inquiry] || subjectMap.general;
-
-    const ndaStatusLabel: Record<string, string> = {
-      "not-yet": "Has not signed NDA yet",
-      "downloaded": "Has downloaded the NDA — will sign and return",
-      "signed-attached": "Has signed the NDA — will email separately",
-      "alternate": "Prefers to use their own NDA template",
-    };
-
-    const body = `
-Name: ${formData.name}
-Title: ${formData.title}
-Company: ${formData.company}
-Email: ${formData.email}
-Phone: ${formData.phone}
-
-Inquiry Type: ${formData.inquiry}
-NDA Status: ${ndaStatusLabel[formData.ndaStatus] || formData.ndaStatus}
-
-Message:
-${formData.message}
-    `.trim();
-
-    const mailtoLink = `mailto:contact@excavatorfoot.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailtoLink;
-
-    setTimeout(() => {
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        setErrorMessage(data?.error || "Submission failed. Please try again or email info@excavatorfoot.com directly.");
+        setStatus("error");
+        return;
+      }
       setStatus("success");
       setFormData({
         name: "",
@@ -69,9 +50,13 @@ ${formData.message}
         inquiry: "general",
         ndaStatus: "not-yet",
         message: "",
+        honeypot: "",
       });
-      setTimeout(() => setStatus("idle"), 4000);
-    }, 1000);
+      setTimeout(() => setStatus("idle"), 6000);
+    } catch {
+      setErrorMessage("Network error. Please email info@excavatorfoot.com directly.");
+      setStatus("error");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -167,7 +152,7 @@ ${formData.message}
             </div>
 
             <p className="text-xs text-gray-500 mt-4 italic">
-              Sign and email the executed copy to contact@excavatorfoot.com along with your form
+              Sign and email the executed copy to info@excavatorfoot.com along with your form
               submission. The technical package will be released upon countersignature.
             </p>
           </div>
@@ -193,10 +178,10 @@ ${formData.message}
                   <div>
                     <h3 className="text-white font-semibold mb-1">Email</h3>
                     <a
-                      href="mailto:contact@excavatorfoot.com"
+                      href="mailto:info@excavatorfoot.com"
                       className="text-gray-400 hover:text-yellow-400 transition-colors"
                     >
-                      contact@excavatorfoot.com
+                      info@excavatorfoot.com
                     </a>
                   </div>
                 </div>
@@ -353,6 +338,18 @@ ${formData.message}
                   />
                 </div>
 
+                {/* Honeypot — hidden from real users, filled by bots */}
+                <input
+                  type="text"
+                  name="honeypot"
+                  value={formData.honeypot}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }}
+                />
+
                 <button
                   type="submit"
                   disabled={status === "sending"}
@@ -376,7 +373,7 @@ ${formData.message}
                 )}
                 {status === "error" && (
                   <p className="text-red-400 text-sm text-center">
-                    Something went wrong. Please email contact@excavatorfoot.com directly.
+                    {errorMessage || "Something went wrong. Please email info@excavatorfoot.com directly."}
                   </p>
                 )}
               </form>

@@ -9,7 +9,7 @@ This Mutual Non-Disclosure Agreement (the "Agreement") is entered into as of the
 **DISCLOSING PARTY:**
 Kable Darren Record d/b/a Excavator Foot
 Address: _________________________________
-Email: contact@excavatorfoot.com
+Email: info@excavatorfoot.com
 ("Discloser")
 
 **RECEIVING PARTY:**
