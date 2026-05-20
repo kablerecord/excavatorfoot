@@ -57,7 +57,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full">
               <Award size={14} className="text-yellow-400" />
               <span className="text-yellow-400 font-semibold text-sm">
-                U.S. Patent Application 18/594,097 — Allowable Subject Matter Indicated by USPTO
+                U.S. Patent Application 18/594,097 — Notice of Allowance Issued — Patent to Grant
               </span>
             </div>
 

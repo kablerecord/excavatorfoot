@@ -1,6 +1,6 @@
 # Excavator Foot — Factory-Installable Pivot Technology for Tracked Excavators
 
-> The Excavator Foot is a patented hydraulic plate-and-turntable mechanism that lets a tracked excavator rotate in place without skid-turning the tracks. It mounts to the underside of the main frame and uses the excavator's own existing rotary motor — anchored via the boom and bucket — to perform the rotation. U.S. Patent Application 18/594,097 has received a non-final office action with allowable subject matter indicated for the apparatus and the excavator-combination claims. The technology is offered for OEM licensing to manufacturers of tracked construction equipment.
+> The Excavator Foot is a patented hydraulic plate-and-turntable mechanism that lets a tracked excavator rotate in place without skid-turning the tracks. It mounts to the underside of the main frame and uses the excavator's own existing rotary motor — anchored via the boom and bucket — to perform the rotation. U.S. Patent Application 18/594,097 received a Notice of Allowance from the USPTO on 5/20/2026 — claims 1 and 3–12 are formally allowed and the patent will issue upon payment of the issue fee. A continuation application is being filed concurrently to broaden ground-engagement coverage. The technology is offered for OEM licensing to manufacturers of tracked construction equipment.
 
 ## Positioning
 
@@ -48,11 +48,12 @@ The 308 prototype is the size threshold where right-of-way contractors, urban in
 
 - **U.S. Patent Application Number**: 18/594,097
 - **Filed**: March 4, 2024 (with priority to provisional 63/598,078 filed November 11, 2023)
-- **Status**: Non-final office action received April 15, 2026; amendment to take indicated allowable subject matter being prosecuted by Patent Agent Bruce A. Lev (Reg. 58,594)
+- **Status**: **Notice of Allowance issued May 20, 2026.** Claims 1 and 3–12 formally allowed by the USPTO. Patent to grant upon payment of issue fee (deadline 8/20/2026). Entity status: Micro. Prosecuted by Patent Agent Bruce A. Lev (Reg. 58,594).
 - **Inventor**: Kable Darren Record
 - **Type**: Utility patent — mechanical / hydraulic pivot system for tracked construction equipment
+- **Examiner Statement of Reasons for Allowance**: The USPTO found no prior art teaching or rendering obvious (a) the hydraulic controller with two hoses connected to the hydraulic piston in combination with the other limitations of claim 1, or (b) the turntable assembly engaging the ground to raise the excavator main frame and tracks while the rotary motor rotates the main frame via the turntable, in combination with the other limitations of claim 7.
 
-The patent application includes both an apparatus claim (the mechanism itself) and a combination claim (the excavator + apparatus + four-step operational sequence). A continuation application is planned post-issuance to broaden the ground-engagement language to cover equivalent rotation mechanisms beyond the literal turntable form, closing off remaining design-around space.
+The patent includes both an apparatus claim (the mechanism itself) and a combination claim (the excavator + apparatus + four-step operational sequence). A continuation application is being filed concurrently with the issue fee to broaden the ground-engagement language to cover equivalent rotation mechanisms beyond the literal turntable form, closing off remaining design-around space.
 
 ## Available Materials
 
