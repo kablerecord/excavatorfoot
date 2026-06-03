@@ -1,6 +1,15 @@
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
+const SOCIALS = [
+  { label: "YouTube", href: "https://www.youtube.com/@kablerecord" },
+  { label: "Instagram", href: "https://instagram.com/kablerecord" },
+  { label: "X", href: "https://twitter.com/kablerecord" },
+  { label: "Facebook", href: "https://www.facebook.com/kablerecord" },
+  { label: "TikTok", href: "https://www.tiktok.com/@kable.record" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/kable-record-4817ab13" },
+];
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -55,7 +64,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://osqr.app"
+                  href="https://osqr.ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-yellow-400 transition-colors text-sm inline-flex items-center gap-1"
@@ -89,6 +98,19 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+          <nav aria-label="Social media" className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2">
+            {SOCIALS.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="text-gray-400 hover:text-yellow-400 transition-colors"
+              >
+                {s.label}
+              </a>
+            ))}
+          </nav>
           <p>&copy; {currentYear} Excavator Foot. All rights reserved.</p>
         </div>
       </div>

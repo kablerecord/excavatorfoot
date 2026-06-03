@@ -27,9 +27,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Excavator Foot",
+    url: "https://excavatorfoot.com",
+    description:
+      "Patented hydraulic pivot mechanism that lets tracked excavators rotate in place using the machine's own rotary motor. Available for OEM licensing. U.S. Patent Application 18/594,097.",
+    founder: {
+      "@type": "Person",
+      name: "Kable Record",
+      url: "https://kablerecord.com",
+    },
+    sameAs: [
+      "https://www.youtube.com/@kablerecord",
+      "https://instagram.com/kablerecord",
+      "https://twitter.com/kablerecord",
+      "https://www.facebook.com/kablerecord",
+      "https://www.tiktok.com/@kable.record",
+      "https://www.linkedin.com/in/kable-record-4817ab13",
+    ],
+  };
+
   return (
     <html lang="en" className="dark">
       <body className="antialiased min-h-screen bg-black font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />
