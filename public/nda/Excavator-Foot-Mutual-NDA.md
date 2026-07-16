@@ -1,7 +1,7 @@
 # MUTUAL NON-DISCLOSURE AGREEMENT
 
 **Subject Matter:** Excavator Foot — Patented Pivot System for Tracked Excavators
-**U.S. Patent Application No.:** 18/594,097
+**U.S. Patent No.:** 12,679,457
 **Effective Date:** _______________________
 
 This Mutual Non-Disclosure Agreement (the "Agreement") is entered into as of the Effective Date above by and between:
@@ -26,7 +26,7 @@ Email: _________________________________
 
 ## 1. Purpose
 
-The Parties wish to evaluate a potential business relationship relating to the licensing, manufacture, distribution, integration, or commercialization of the Excavator Foot pivot system technology, including U.S. Patent Application No. 18/594,097 and any related continuations, divisionals, foreign counterparts, improvements, and know-how (collectively, the "Technology"). This Agreement governs the disclosure and use of Confidential Information (as defined below) between the Parties for the purpose of evaluating the Technology and any potential transaction relating to it (the "Purpose").
+The Parties wish to evaluate a potential business relationship relating to the licensing, manufacture, distribution, integration, or commercialization of the Excavator Foot pivot system technology, including U.S. Patent No. 12,679,457 and any related applications, continuations, divisionals, foreign counterparts, improvements, and know-how (collectively, the "Technology"). This Agreement governs the disclosure and use of Confidential Information (as defined below) between the Parties for the purpose of evaluating the Technology and any potential transaction relating to it (the "Purpose").
 
 ## 2. Confidential Information
 
@@ -73,7 +73,7 @@ The Receiving Party agrees that it shall:
 
 ## 5. No License or Transfer of Rights
 
-Nothing in this Agreement grants the Receiving Party any license, ownership interest, or other right in or to the Technology, the Confidential Information, U.S. Patent Application No. 18/594,097, any continuation thereof, any related patent rights, or any trademarks, trade secrets, or copyrights of the Disclosing Party, except the limited right to use Confidential Information for the Purpose during the term of this Agreement. All rights are expressly reserved by the Disclosing Party.
+Nothing in this Agreement grants the Receiving Party any license, ownership interest, or other right in or to the Technology, the Confidential Information, U.S. Patent No. 12,679,457, any related patent rights, or any trademarks, trade secrets, or copyrights of the Disclosing Party, except the limited right to use Confidential Information for the Purpose during the term of this Agreement. All rights are expressly reserved by the Disclosing Party.
 
 ## 6. No Obligation to Proceed
 

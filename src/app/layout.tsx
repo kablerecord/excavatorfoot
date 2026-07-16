@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Excavator Foot — Factory-Installable Pivot Technology for Tracked Excavators",
-  description: "Patented hydraulic pivot mechanism that lets tracked excavators rotate in place using the machine's own rotary motor. Validated across 2-, 5-, and 8-ton classes. Available for OEM licensing. U.S. Patent Application 18/594,097.",
+  description: "Patented hydraulic pivot mechanism that lets tracked excavators rotate in place using the machine's own rotary motor. Validated across 2-, 5-, and 8-ton classes. Available for OEM licensing. U.S. Patent No. 12,679,457.",
   keywords: ["OEM licensing", "tracked excavator", "pivot mechanism", "hydraulic turntable", "patent licensing", "construction equipment innovation", "Caterpillar", "Bobcat", "Kubota", "Komatsu", "ground damage prevention", "undercarriage wear"],
   authors: [{ name: "Kable Darren Record" }],
   openGraph: {
@@ -33,7 +33,7 @@ export default function RootLayout({
     name: "Excavator Foot",
     url: "https://excavatorfoot.com",
     description:
-      "Patented hydraulic pivot mechanism that lets tracked excavators rotate in place using the machine's own rotary motor. Available for OEM licensing. U.S. Patent Application 18/594,097.",
+      "Patented hydraulic pivot mechanism that lets tracked excavators rotate in place using the machine's own rotary motor. Available for OEM licensing. U.S. Patent No. 12,679,457.",
     founder: {
       "@type": "Person",
       name: "Kable Record",

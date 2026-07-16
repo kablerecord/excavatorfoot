@@ -148,7 +148,7 @@ ${company ? `- Company: ${company}\n` : ""}- Submitted: ${new Date().toLocaleDat
 
 — Kable Record
 Inventor, Excavator Foot
-U.S. Patent Application 18/594,097 — Notice of Allowance Issued
+U.S. Patent No. 12,679,457
 https://excavatorfoot.com
 `.trim();
 

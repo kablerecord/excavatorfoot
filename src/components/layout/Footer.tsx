@@ -27,7 +27,14 @@ export function Footer() {
               Patented ground stabilization technology for excavators.
             </p>
             <p className="text-gray-500 text-xs">
-              Patent Application: 18/594,097
+              <a
+                href="https://patents.google.com/patent/US12679457B2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-400 transition-colors"
+              >
+                U.S. Patent No. 12,679,457
+              </a>
             </p>
           </div>
 

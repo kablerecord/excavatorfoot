@@ -97,12 +97,19 @@ export default function AboutPage() {
               </p>
               <div className="inline-flex flex-col gap-2">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg">
-                  <span className="text-gray-400 text-sm">U.S. Patent Application:</span>
-                  <span className="text-yellow-400 font-mono font-semibold">18/594,097</span>
+                  <span className="text-gray-400 text-sm">U.S. Patent:</span>
+                  <a
+                    href="https://patents.google.com/patent/US12679457B2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-yellow-400 font-mono font-semibold hover:text-yellow-300 transition-colors"
+                  >
+                    12,679,457
+                  </a>
                 </div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 rounded-lg">
                   <span className="text-yellow-400 text-sm font-semibold">
-                    Notice of Allowance issued — patent to grant
+                    Granted July 14, 2026
                   </span>
                 </div>
               </div>
@@ -122,8 +129,10 @@ export default function AboutPage() {
             What the patent protects.
           </h2>
           <p className="text-gray-300 mb-8 max-w-3xl">
-            Claims 1 and 3–12 have been formally allowed by the USPTO (Notice of Allowance
-            mailed 5/20/2026). The patent will issue upon payment of the issue fee.
+            U.S. Patent No. 12,679,457 issued on July 14, 2026 with eleven claims — two
+            independent claims (the apparatus itself, and the excavator-plus-apparatus
+            combination) plus nine dependents. With patent term adjustment, protection
+            runs into early 2045.
           </p>
 
           <div className="space-y-6 mb-10">
@@ -152,13 +161,14 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
-              <h3 className="text-xl font-bold mb-3 text-white">Continuation in flight</h3>
+              <h3 className="text-xl font-bold mb-3 text-white">Design-around tested — by the inventor</h3>
               <p className="text-gray-300">
-                Concurrent with payment of the issue fee, a continuation application is being
-                filed to broaden the ground-engagement language beyond the specific turntable
-                form — covering equivalent rotation mechanisms (bearing rings, caster arrays,
-                etc.) so the IP wall covers the full design space. The continuation preserves
-                the original priority date of 3/4/2024.
+                Alternate architectures were prototyped and stress-tested, including bucket-free
+                stabilization. Every workable configuration converges on the same sequence the
+                patent claims: anchor with the bucket, lift from under the frame, rotate on a
+                ground-engaging foot. The combination claim covers that sequence independent of
+                how the lift itself is built — a swinging boom throws the balance point, and
+                forward-projecting stabilizers foul the tracks the moment the house rotates.
               </p>
             </div>
           </div>
@@ -169,7 +179,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-xl font-bold mb-3 text-white">Detailed IP package available under NDA</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  The full claim chart, prosecution history, prior art analysis, and continuation strategy
+                  The full claim chart, prosecution history, prior art analysis, and design-around study
                   are available to qualified evaluators under a mutual NDA. Engineering drawings, hydraulic
                   schematics, load analysis, and royalty model are released on the same path.
                 </p>

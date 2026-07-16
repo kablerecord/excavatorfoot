@@ -57,7 +57,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full">
               <Award size={14} className="text-yellow-400" />
               <span className="text-yellow-400 font-semibold text-sm">
-                U.S. Patent Application 18/594,097 — Notice of Allowance Issued — Patent to Grant
+                U.S. Patent No. 12,679,457 — Granted July 14, 2026
               </span>
             </div>
 
@@ -492,9 +492,9 @@ export default function HomePage() {
               <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">Lever 4</div>
               <h3 className="text-xl font-bold mb-3 text-white">Defensibility</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                The lever your competitors do not have. Apparatus claim plus combination claim plus
-                continuation strategy. A multi-year exclusive lever in a commoditized category —
-                design-around requires a redundant powertrain and still infringes.
+                The lever your competitors do not have. Apparatus claim plus combination claim,
+                granted through early 2045. A multi-year exclusive lever in a commoditized
+                category — design-around requires a redundant powertrain that breaks the cost model.
               </p>
             </div>
           </div>
