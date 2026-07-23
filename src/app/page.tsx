@@ -353,7 +353,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Live demonstration available Q3 2026
+                    Live demonstrations scheduled as final assembly completes
                   </li>
                 </ul>
               </div>

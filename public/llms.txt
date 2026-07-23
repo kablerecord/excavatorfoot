@@ -40,7 +40,7 @@ Three working prototypes have been built and operated:
 
 - **2-ton class** — Caterpillar 302 — mechanism geometry validated, operator sequence proven
 - **5-ton class** — Caterpillar 305 — full operational cycle on dirt and pavement, featured in the public demonstration video at https://excavatorfoot.com/#demo
-- **8-ton class** — Caterpillar 308 — production-grade machined parts in final assembly; live demonstration available Q3 2026
+- **8-ton class** — Caterpillar 308 — production-grade machined parts in final assembly; live demonstrations scheduled as assembly completes
 
 The 308 prototype is the size threshold where right-of-way contractors, urban infill builders, and infrastructure crews operate. It is the prototype that demonstrates the mechanism scales to the machine classes OEMs ship in volume.
 
