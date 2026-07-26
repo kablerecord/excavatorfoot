@@ -1,0 +1,5 @@
+# Excavator Foot — allow all crawlers, including AI/search bots
+User-agent: *
+Allow: /
+
+Sitemap: https://excavatorfoot.com/sitemap.xml
