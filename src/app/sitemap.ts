@@ -13,6 +13,7 @@ import { SITE_URL } from "@/lib/site";
  */
 const LAST_MODIFIED = {
   home: "2026-08-01",
+  turfDamage: "2026-08-01",
   about: "2026-07-26",
   contact: "2026-07-26",
 } as const;
@@ -24,6 +25,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED.home,
       changeFrequency: "monthly",
       priority: 1.0,
+    },
+    {
+      // Priority second only to the homepage: this is the page targeting the
+      // queries that actually have search volume.
+      url: `${SITE_URL}/turf-damage`,
+      lastModified: LAST_MODIFIED.turfDamage,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
     {
       url: `${SITE_URL}/about`,

@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, FileText, Hammer, Lightbulb, Target, Award } from "lucide-react";
 
+import { PATENT } from "@/lib/patent";
+
 export const metadata = {
   title:
     "About — The Contractor Who Patented a Fix for Excavator Turf Damage | Excavator Foot",
@@ -102,12 +104,12 @@ export default function AboutPage() {
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg">
                   <span className="text-gray-400 text-sm">U.S. Patent:</span>
                   <a
-                    href="https://patents.google.com/patent/US12679457B2"
+                    href={PATENT.usptoPdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-yellow-400 font-mono font-semibold hover:text-yellow-300 transition-colors"
                   >
-                    12,679,457
+                    {PATENT.number}
                   </a>
                 </div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 rounded-lg">
@@ -132,11 +134,58 @@ export default function AboutPage() {
             What the patent protects.
           </h2>
           <p className="text-gray-300 mb-8 max-w-3xl">
-            U.S. Patent No. 12,679,457 issued on July 14, 2026 with eleven claims — two
-            independent claims (the apparatus itself, and the excavator-plus-apparatus
-            combination) plus nine dependents. With patent term adjustment, protection
-            runs into early 2045.
+            U.S. Patent No. {PATENT.number} issued on {PATENT.grantDateDisplay} with{" "}
+            {PATENT.claimCount} claims — two independent claims (the apparatus itself, and
+            the excavator-plus-apparatus combination) plus nine dependents. With patent term
+            adjustment, protection runs into early 2045.
           </p>
+
+          {/* The full bibliographic record, verbatim off the face of the grant.
+              An evaluator's first move is to confirm this thing exists, so give
+              them every field they need to look it up independently rather than
+              making them take our word for it. Both links resolve today — the
+              Google Patents entry is the pre-grant publication, because the
+              grant itself is not indexed yet. */}
+          <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8 mb-10">
+            <h3 className="text-xl font-bold mb-6 text-white">
+              Verify it yourself
+            </h3>
+            <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-4 text-sm mb-6">
+              {[
+                ["Official title", PATENT.title],
+                ["Patent number", `US ${PATENT.number} ${PATENT.kindCode}`],
+                ["Granted", PATENT.grantDateDisplay],
+                ["Application no.", PATENT.applicationNumber],
+                ["Filed", PATENT.filingDateDisplay],
+                ["Pre-grant publication", PATENT.publicationNumber],
+                ["Provisional", `${PATENT.provisionalNumber} — ${PATENT.provisionalDateDisplay}`],
+                ["Inventor", PATENT.inventor],
+              ].map(([label, value]) => (
+                <div key={label}>
+                  <dt className="text-gray-500">{label}</dt>
+                  <dd className="text-gray-200 font-medium">{value}</dd>
+                </div>
+              ))}
+            </dl>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={PATENT.usptoPdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 text-yellow-400 text-sm font-semibold rounded-lg hover:bg-yellow-400/20 transition-all"
+              >
+                Granted patent (USPTO PDF)
+              </a>
+              <a
+                href={PATENT.googlePatentsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 text-gray-300 text-sm font-semibold rounded-lg hover:border-yellow-400 hover:text-yellow-400 transition-all"
+              >
+                Read on Google Patents
+              </a>
+            </div>
+          </div>
 
           <div className="space-y-6 mb-10">
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-8">

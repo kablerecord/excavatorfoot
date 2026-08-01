@@ -261,6 +261,20 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+
+          {/* Internal link into the turf-damage guide. It is the page targeting
+              the queries with actual volume, so it needs a link from the
+              highest-authority page on the site, in the section whose topic it
+              continues. */}
+          <div className="mt-10 text-center">
+            <Link
+              href="/turf-damage"
+              className="inline-flex items-center gap-2 text-yellow-400 font-semibold hover:text-yellow-300 transition-colors"
+            >
+              Why excavators tear up lawns — and what actually stops it
+              <ArrowRight size={18} />
+            </Link>
+          </div>
         </div>
       </section>
 

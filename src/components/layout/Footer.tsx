@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
+import { PATENT } from "@/lib/patent";
+
 const SOCIALS = [
   { label: "YouTube", href: "https://www.youtube.com/@kablerecord" },
   { label: "Instagram", href: "https://instagram.com/kablerecord" },
@@ -34,14 +36,17 @@ export function Footer() {
               Patented mechanism that turns a tracked excavator in place —
               without tearing up the ground.
             </p>
+            {/* Was patents.google.com/patent/US12679457B2 — a 404. Google has
+                not indexed the July 2026 grant yet. Points at the USPTO grant
+                document instead, which resolves today. See src/lib/patent.ts. */}
             <p className="text-gray-500 text-xs">
               <a
-                href="https://patents.google.com/patent/US12679457B2"
+                href={PATENT.usptoPdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-yellow-400 transition-colors"
               >
-                U.S. Patent No. 12,679,457
+                U.S. Patent No. {PATENT.number}
               </a>
             </p>
           </div>
@@ -53,6 +58,11 @@ export function Footer() {
               {/* Was href="/#products" — the homepage has no #products
                   section (its anchors are #demo and #validation), so this
                   link silently dropped the visitor at the top of the page. */}
+              <li>
+                <Link href="/turf-damage" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                  Excavator Turf Damage
+                </Link>
+              </li>
               <li>
                 <Link href="/#demo" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                   Watch the Demo
