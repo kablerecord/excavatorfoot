@@ -18,9 +18,85 @@ import {
   Cable,
 } from "lucide-react";
 
+import { SITE_URL } from "@/lib/site";
+
+/**
+ * Product structured data for the Excavator Foot itself.
+ *
+ * Deliberately omitted: `offers`, `aggregateRating` and `review`.
+ *
+ * There is no price and nothing is for sale — this is an OEM licensing
+ * programme, so any `offers` block would be fabricated. Self-hosted star
+ * ratings with no real reviews behind them are a manual-action trigger, and
+ * inventing them on a page whose whole purpose is convincing a licensee the IP
+ * is real would be actively self-defeating. Without `offers` Google will not
+ * render a product rich result; the markup still earns its place by letting
+ * search and AI answer engines resolve "Excavator Foot" to a specific patented
+ * apparatus rather than to excavator foot pedals, which is what currently owns
+ * that phrase.
+ *
+ * `additionalProperty` is the correct home for the patent data — schema.org
+ * core has no Patent type, so a PropertyValue pair is the honest encoding.
+ */
+const productJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": `${SITE_URL}/#product`,
+  name: "Excavator Foot",
+  description:
+    "A patented hydraulic plate-and-turntable mechanism that mounts under the main frame of a tracked excavator and lets the machine pivot in place using its own existing rotary motor. Eliminates the skid-turn that tears up turf and finished surfaces and drives undercarriage wear.",
+  category: "Construction Equipment Attachment",
+  url: SITE_URL,
+  image: `${SITE_URL}/images/foot in the street.jpg`,
+  brand: { "@id": `${SITE_URL}/#organization` },
+  manufacturer: { "@id": `${SITE_URL}/#organization` },
+  audience: {
+    "@type": "Audience",
+    audienceType:
+      "Original equipment manufacturers of tracked and compact excavators",
+  },
+  additionalProperty: [
+    {
+      "@type": "PropertyValue",
+      name: "U.S. Patent Number",
+      value: "12,679,457",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Patent Grant Date",
+      value: "2026-07-14",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Machine Class Range",
+      value: "2-ton to 12-ton tracked excavators",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Mounting Location",
+      value: "Underside of excavator main frame",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Actuation",
+      value:
+        "Host machine's existing hydraulic circuit and rotary motor — no additional powertrain",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Availability",
+      value: "OEM licensing (not sold as an aftermarket product)",
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative pt-32 pb-24 px-4 overflow-hidden min-h-[760px] flex items-center">
         {/* Background video — autoplay muted loop, falls back to poster image */}

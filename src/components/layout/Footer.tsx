@@ -23,8 +23,16 @@ export function Footer() {
               <span className="text-white">Excavator</span>
               <span className="text-yellow-400">Foot</span>
             </h3>
+            {/* Was "Patented ground stabilization technology for excavators."
+                — a third, different description of the product (the layout
+                said "pivot technology", llms.txt said "pivot mechanism"), and
+                the least accurate of the three: the foot stabilises nothing,
+                it rotates the machine. Inconsistent self-description across a
+                site is both a ranking dilution and, for a licensee reading
+                closely, a credibility problem. */}
             <p className="text-gray-400 text-sm mb-4">
-              Patented ground stabilization technology for excavators.
+              Patented mechanism that turns a tracked excavator in place —
+              without tearing up the ground.
             </p>
             <p className="text-gray-500 text-xs">
               <a
@@ -42,9 +50,17 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
+              {/* Was href="/#products" — the homepage has no #products
+                  section (its anchors are #demo and #validation), so this
+                  link silently dropped the visitor at the top of the page. */}
               <li>
-                <Link href="/#products" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                  Products
+                <Link href="/#demo" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                  Watch the Demo
+                </Link>
+              </li>
+              <li>
+                <Link href="/#validation" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
+                  Prototype Validation
                 </Link>
               </li>
               <li>

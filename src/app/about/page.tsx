@@ -3,8 +3,11 @@ import Link from "next/link";
 import { ArrowRight, FileText, Hammer, Lightbulb, Target, Award } from "lucide-react";
 
 export const metadata = {
-  title: "About — Excavator Foot",
-  description: "The story behind the Excavator Foot pivot system, the inventor, the IP portfolio, and the licensing strategy.",
+  title:
+    "About — The Contractor Who Patented a Fix for Excavator Turf Damage | Excavator Foot",
+  description:
+    "How a working contractor tired of tearing up customers' lawns designed, prototyped and patented a mechanism that lets a tracked excavator turn in place. Three prototypes, 2- to 8-ton class, U.S. Patent No. 12,679,457.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
