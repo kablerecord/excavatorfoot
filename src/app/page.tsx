@@ -90,12 +90,47 @@ const productJsonLd = {
   ],
 };
 
+/**
+ * VideoObject for the Cat 305 prototype demo, so the clip is eligible for video
+ * rich results — footage of the mechanism working is the most persuasive asset
+ * on this site and worth surfacing directly in search.
+ *
+ * uploadDate is the real upload date of erD8sqSalJY, read from YouTube
+ * (2025-08-24), not an estimate. It must describe the video actually embedded
+ * on this page or the markup is invalid.
+ *
+ * NOTE: the same 102-second footage exists twice on the channel —
+ * M8qQNuZUiIs ("Turning an excavator without using tracks", uploaded
+ * 2023-11-11, matching the provisional filing) and erD8sqSalJY ("Excavator
+ * foot", 2025-08-24, the one embedded here). Two uploads split their own view
+ * counts and search signals. If you consolidate, keep the 2023 title — it
+ * describes the problem a buyer searches for rather than our product name,
+ * which collides with excavator foot pedals — and update the embed and this
+ * markup together.
+ */
+const videoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "Excavator Foot — working prototype on a Caterpillar 305",
+  description:
+    "Working prototype of the patented Excavator Foot on a Caterpillar 305 mini excavator, turning in place on dirt and pavement without scrubbing the tracks. U.S. Patent No. 12,679,457.",
+  thumbnailUrl: ["https://i.ytimg.com/vi/erD8sqSalJY/maxresdefault.jpg"],
+  uploadDate: "2025-08-24T15:37:42-07:00",
+  duration: "PT1M42S",
+  embedUrl: "https://www.youtube.com/embed/erD8sqSalJY",
+  contentUrl: "https://www.youtube.com/watch?v=erD8sqSalJY",
+};
+
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
       />
       {/* Hero */}
       <section className="relative pt-32 pb-24 px-4 overflow-hidden min-h-[760px] flex items-center">
