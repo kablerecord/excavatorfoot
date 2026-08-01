@@ -95,30 +95,29 @@ const productJsonLd = {
  * rich results — footage of the mechanism working is the most persuasive asset
  * on this site and worth surfacing directly in search.
  *
- * uploadDate is the real upload date of erD8sqSalJY, read from YouTube
- * (2025-08-24), not an estimate. It must describe the video actually embedded
- * on this page or the markup is invalid.
+ * uploadDate is the real upload date read from YouTube (2023-11-11), not an
+ * estimate. Every field here must describe the video actually embedded on this
+ * page or the markup is invalid.
  *
- * NOTE: the same 102-second footage exists twice on the channel —
- * M8qQNuZUiIs ("Turning an excavator without using tracks", uploaded
- * 2023-11-11, matching the provisional filing) and erD8sqSalJY ("Excavator
- * foot", 2025-08-24, the one embedded here). Two uploads split their own view
- * counts and search signals. If you consolidate, keep the 2023 title — it
- * describes the problem a buyer searches for rather than our product name,
- * which collides with excavator foot pedals — and update the embed and this
- * markup together.
+ * NOTE: the same 102-second footage exists twice on the channel — M8qQNuZUiIs
+ * ("Turning an excavator without using tracks", 2023-11-11, the one used here)
+ * and erD8sqSalJY ("Excavator foot", 2025-08-24, which this page embedded
+ * until now). Two uploads of one clip split their own view counts and search
+ * signals, so this consolidates onto the original. The 2023 title is also the
+ * better asset: it describes the problem a buyer searches for, rather than our
+ * product name, which collides with excavator foot pedals.
  */
 const videoJsonLd = {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  name: "Excavator Foot — working prototype on a Caterpillar 305",
+  name: "Turning an excavator without using tracks — Excavator Foot prototype on a Cat 305",
   description:
     "Working prototype of the patented Excavator Foot on a Caterpillar 305 mini excavator, turning in place on dirt and pavement without scrubbing the tracks. U.S. Patent No. 12,679,457.",
-  thumbnailUrl: ["https://i.ytimg.com/vi/erD8sqSalJY/maxresdefault.jpg"],
-  uploadDate: "2025-08-24T15:37:42-07:00",
+  thumbnailUrl: ["https://i.ytimg.com/vi/M8qQNuZUiIs/maxresdefault.jpg"],
+  uploadDate: "2023-11-11T09:52:05-08:00",
   duration: "PT1M42S",
-  embedUrl: "https://www.youtube.com/embed/erD8sqSalJY",
-  contentUrl: "https://www.youtube.com/watch?v=erD8sqSalJY",
+  embedUrl: "https://www.youtube.com/embed/M8qQNuZUiIs",
+  contentUrl: "https://www.youtube.com/watch?v=M8qQNuZUiIs",
 };
 
 export default function HomePage() {
@@ -224,8 +223,8 @@ export default function HomePage() {
 
           <div className="video-container glow-yellow">
             <iframe
-              src="https://www.youtube.com/embed/erD8sqSalJY"
-              title="Excavator Foot — Working Prototype"
+              src="https://www.youtube.com/embed/M8qQNuZUiIs"
+              title="Turning an excavator without using tracks — Excavator Foot prototype on a Cat 305"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />

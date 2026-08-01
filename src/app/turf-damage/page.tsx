@@ -370,7 +370,7 @@ export default function TurfDamagePage() {
               </h3>
               <p className="text-gray-400 mb-6 text-sm">
                 A working prototype on a Cat 305, cycling through the full
-                sequence on dirt and pavement. Ninety seconds, no narration
+                sequence on dirt and pavement. Under two minutes, no narration
                 needed.
               </p>
               <Link
