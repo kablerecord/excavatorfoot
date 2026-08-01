@@ -21,8 +21,8 @@ export default function AboutPage() {
             to a <span className="gradient-text">patented mechanism</span>.
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            How a contractor who got tired of tearing up customers&apos; lawns built and patented a
-            factory-installable solution for tracked excavators.
+            How a contractor who got tired of tearing up customers&apos; lawns built and patented
+            a way for a tracked excavator to turn in place.
           </p>
         </div>
       </section>

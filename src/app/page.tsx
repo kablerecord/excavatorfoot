@@ -137,18 +137,22 @@ export default function HomePage() {
               </span>
             </div>
 
+            {/* Was "Factory-Installable / Pivot Technology / for Tracked
+                Excavators" — an invented category label with no search volume,
+                written for an OEM strategy reader who arrives by email, not by
+                search. Leads with the problem an operator would actually type. */}
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-white">Factory-Installable</span><br />
-              <span className="gradient-text">Pivot Technology</span><br />
-              <span className="text-white">for Tracked Excavators</span>
+              <span className="text-white">Turn a Tracked Excavator</span><br />
+              <span className="gradient-text">Without Tearing Up</span><br />
+              <span className="text-white">the Ground</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-300 mb-4 leading-relaxed max-w-4xl mx-auto">
-              A patented mechanism that turns any tracked excavator in place — without ground damage,
-              without skid wear, without leaving the operator&apos;s seat.
+              A patented foot drops, lifts the tracks clear, and lets the machine spin to any
+              heading on its own turntable. No counter-rotating. No torn turf. No plywood.
             </p>
             <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-3xl mx-auto">
-              Validated across 2-, 5-, and 8-ton classes. Available for OEM licensing.
+              Built and run on 2-, 5-, and 8-ton machines. Available for OEM licensing.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -174,11 +178,12 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              See It <span className="gradient-text">Work</span>
+              See It <span className="gradient-text">Turn in Place</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Working prototype on a Caterpillar 305 mini excavator.
-              The same mechanism scales from 2-ton to 8-ton class machines.
+              Working prototype on a Caterpillar 305 mini excavator, turning on dirt and
+              pavement without scrubbing the tracks. The same mechanism scales from 2-ton
+              to 8-ton machines.
             </p>
           </div>
 
@@ -207,44 +212,52 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-full mb-6">
               <span className="text-red-400 font-semibold text-sm">The Problem</span>
             </div>
+            {/* Operators do not say "skid-turn" — on the forums where they
+                describe this exact problem they say counter-rotate, spot turn,
+                track marks, tearing up the yard. Those are the words that get
+                typed into a search box, so those are the words used here. */}
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Tracked excavators <span className="gradient-text">cannot turn</span> without<br />causing damage and consuming themselves.
+              Every time a tracked excavator turns, it <span className="gradient-text">tears up the ground</span><br />and chews up its own undercarriage.
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Every skid-turn shears the ground, scrubs the undercarriage, and limits the jobsites the machine
-              can be deployed to. The cost shows up across <span className="text-yellow-400 font-semibold">time</span>,
+              To change heading, the tracks have to counter-rotate against the ground. That one
+              motion scars turf, gouges asphalt, and grinds sprockets and rollers — which is why
+              crews haul plywood and swamp mats to every finished-surface job, and why lawn repair
+              keeps landing on the contractor&apos;s invoice. The cost shows up in
+              <span className="text-yellow-400 font-semibold"> time</span>,
               <span className="text-yellow-400 font-semibold"> money</span>, and
-              <span className="text-yellow-400 font-semibold"> safety</span> — on every operator and every job.
+              <span className="text-yellow-400 font-semibold"> safety</span>.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
-              <h3 className="text-lg font-bold mb-2 text-white">Surface Damage</h3>
+              <h3 className="text-lg font-bold mb-2 text-white">Torn-Up Turf and Hardscape</h3>
               <p className="text-gray-400 text-sm">
-                Lawns, asphalt, pavers, and finished concrete are torn up by every rotation.
-                Restoration is borne by the contractor.
+                Lawns, asphalt, pavers, and finished concrete get scarred by every turn —
+                two parallel gouges in the grass. The restoration bill lands on the contractor.
               </p>
             </div>
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
               <h3 className="text-lg font-bold mb-2 text-white">Undercarriage Wear</h3>
               <p className="text-gray-400 text-sm">
-                Skid-turning is the #1 driver of premature track, sprocket, and roller wear —
-                often the largest non-fuel operating cost on the machine.
+                Counter-rotating is the number-one driver of premature track, sprocket, and
+                roller wear — usually the biggest non-fuel line item on the machine.
               </p>
             </div>
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
-              <h3 className="text-lg font-bold mb-2 text-white">Restricted Sites</h3>
+              <h3 className="text-lg font-bold mb-2 text-white">Jobs You Have to Turn Down</h3>
               <p className="text-gray-400 text-sm">
-                Operators avoid finished surfaces, decorative hardscape, and sensitive turf —
-                shrinking the addressable jobsite and forcing wheeled-equipment substitutes.
+                Crews stay off finished surfaces, decorative hardscape, and good turf — or lay
+                plywood first. Either the job costs more, or it goes to a wheeled machine instead.
               </p>
             </div>
             <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
-              <h3 className="text-lg font-bold mb-2 text-white">Liability Exposure</h3>
+              <h3 className="text-lg font-bold mb-2 text-white">Damage Claims</h3>
               <p className="text-gray-400 text-sm">
-                Property damage claims from track-tear are routine in residential, ROW,
-                and urban infill work — and unavoidable with current track designs.
+                Property-damage claims from track tear-up are routine in residential,
+                right-of-way, and urban infill work — and unavoidable with the way tracks
+                turn today.
               </p>
             </div>
           </div>
@@ -319,6 +332,18 @@ export default function HomePage() {
               <ShieldCheck className="text-yellow-400 flex-shrink-0 mt-1" size={28} />
               <div>
                 <h3 className="text-2xl font-bold mb-3 text-white">Why this is hard to design around</h3>
+                {/* The manual-workaround paragraph is doing real work here: it
+                    is independent evidence that this sequence is the natural
+                    solution, and it is written in the exact words operators
+                    use on the forums where they describe doing it by hand. */}
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Operators already do a crude version of this by hand. Set the bucket flat on the
+                  ground, push down until the tracks are a few inches up, and swing the house to
+                  drag the machine around. Every experienced hand knows the trick, and every one of
+                  them knows it is slow, hard to repeat, and rough on the boom. The Excavator Foot
+                  is that move, engineered — done from the seat, on a turntable built to carry the
+                  load.
+                </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
                   The mechanism uses the excavator&apos;s <strong className="text-white">existing</strong> rotary
                   motor and boom — not a new powertrain. Without anchoring the cabin via the bucket, firing the
@@ -504,15 +529,17 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400/10 border border-yellow-400/30 rounded-full mb-6">
-              <span className="text-yellow-400 font-semibold text-sm">The Strategic Frame</span>
+              <span className="text-yellow-400 font-semibold text-sm">What It&apos;s Worth</span>
             </div>
+            {/* Was "Four levers. One mechanism." — nobody outside a strategy
+                deck says "lever". Same four arguments, in plain nouns. */}
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Four levers. <span className="gradient-text">One mechanism.</span>
+              What it&apos;s worth, <span className="gradient-text">per machine.</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Compact-equipment buyers evaluate against three levers: time, money, and safety.
-              OEM product strategy teams optimize against a fourth your competitors don&apos;t have.
-              The Excavator Foot moves all four.
+              Contractors buy on three things: time, money, and safety. The Excavator Foot
+              moves all three — and hands the manufacturer a fourth that competitors
+              cannot copy.
             </p>
           </div>
 
@@ -521,12 +548,12 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-4">
                 <Clock className="text-yellow-400" size={24} />
               </div>
-              <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">Lever 1</div>
-              <h3 className="text-xl font-bold mb-3 text-white">Time</h3>
+              <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">Time on site</div>
+              <h3 className="text-xl font-bold mb-3 text-white">Stop laying plywood</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Eliminates matting-and-restoration cycles on finished-surface work. Removes the
-                multi-point skid turn from tight-quarters jobs. Operators take more billable hours
-                per week on the work where surface protection was previously a setup tax.
+                No more setting mats down and picking them back up. No more four-point shuffle
+                to get turned around in a tight side yard. More billable hours on exactly the
+                jobs where surface protection used to eat the morning.
               </p>
             </div>
 
@@ -534,12 +561,12 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-4">
                 <DollarSign className="text-yellow-400" size={24} />
               </div>
-              <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">Lever 2</div>
-              <h3 className="text-xl font-bold mb-3 text-white">Money</h3>
+              <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">Wear costs</div>
+              <h3 className="text-xl font-bold mb-3 text-white">Tracks last longer</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Skid-turning is the dominant driver of undercarriage wear — the line item OEMs
-                already publish operator guidance on. Eliminating it materially extends track,
-                sprocket, and roller intervals. Surface-restoration claims drop. TCO moves down.
+                Counter-rotating is what eats tracks, sprockets, and rollers — every manufacturer
+                already publishes operator guidance telling crews to avoid it. Take it out and
+                those intervals stretch. Lawn-repair bills drop. The machine costs less to own.
               </p>
             </div>
 
@@ -547,12 +574,12 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="text-yellow-400" size={24} />
               </div>
-              <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">Lever 3</div>
-              <h3 className="text-xl font-bold mb-3 text-white">Safety</h3>
+              <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">Safety</div>
+              <h3 className="text-xl font-bold mb-3 text-white">Nobody gets out of the cab</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Eliminates ground destabilization during rotation near excavations — an OSHA 1926
-                Subpart P proximity issue. Removes operator dismount-to-mat as a fall hazard.
-                Lowers the equipment-related property-damage incidence that drives liability profile.
+                No churning up the ground while turning next to an open trench — an OSHA 1926
+                Subpart P concern. No climbing down to drag mats around. Fewer property-damage
+                incidents on the books at renewal time.
               </p>
             </div>
 
@@ -565,12 +592,13 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-yellow-400/20 rounded-lg flex items-center justify-center mb-4">
                 <Lock className="text-yellow-400" size={24} />
               </div>
-              <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">Lever 4</div>
-              <h3 className="text-xl font-bold mb-3 text-white">Defensibility</h3>
+              <div className="text-xs text-yellow-400 font-semibold tracking-wider uppercase mb-1">For the manufacturer</div>
+              <h3 className="text-xl font-bold mb-3 text-white">Competitors can&apos;t copy it</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                The lever your competitors do not have. Apparatus claim plus combination claim,
-                granted through early 2045. A multi-year exclusive lever in a commoditized
-                category — design-around requires a redundant powertrain that breaks the cost model.
+                Apparatus claim plus combination claim, granted into early 2045. Years of
+                exclusivity in a category where every machine looks like every other machine —
+                and designing around it means adding a second powertrain, which breaks the
+                cost model.
               </p>
             </div>
           </div>
@@ -580,14 +608,14 @@ export default function HomePage() {
               And they <span className="gradient-text">compound</span>.
             </h3>
             <p className="text-gray-300 leading-relaxed mb-3">
-              These four levers don&apos;t just stack. Less wear means less downtime means fewer
-              service-bay incidents. Faster turns mean less labor cost mean less late-shift
-              fatigue. Defensibility means longer pricing power means stronger dealer-network
-              economics.
+              These don&apos;t just stack up, they feed each other. Less wear means less downtime,
+              which means fewer trips to the service bay. Faster turns mean lower labor cost and
+              less late-shift fatigue. And exclusivity means pricing power, which means healthier
+              dealer margins.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              Each lever amplifies the others — which is what separates a feature add from a
-              category-defining capability.
+              Each one amplifies the others — which is the difference between a feature you add
+              to a spec sheet and a reason someone picks your machine.
             </p>
           </div>
         </div>
