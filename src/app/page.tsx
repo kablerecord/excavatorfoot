@@ -95,17 +95,23 @@ const productJsonLd = {
  * rich results — footage of the mechanism working is the most persuasive asset
  * on this site and worth surfacing directly in search.
  *
- * uploadDate is the real upload date read from YouTube (2023-11-11), not an
- * estimate. Every field here must describe the video actually embedded on this
- * page or the markup is invalid.
+ * uploadDate is read from YouTube rather than estimated, and must match what
+ * YouTube reports — Google cross-checks the two, and a VideoObject that
+ * disagrees with the platform is worse than none.
  *
- * NOTE: the same 102-second footage exists twice on the channel — M8qQNuZUiIs
- * ("Turning an excavator without using tracks", 2023-11-11, the one used here)
- * and erD8sqSalJY ("Excavator foot", 2025-08-24, which this page embedded
- * until now). Two uploads of one clip split their own view counts and search
- * signals, so this consolidates onto the original. The 2023 title is also the
- * better asset: it describes the problem a buyer searches for, rather than our
- * product name, which collides with excavator foot pedals.
+ * It says 2026-08-01 even though this footage was shot and first uploaded in
+ * November 2023. The clip was unlisted until now, and flipping a video from
+ * unlisted to public resets YouTube's publish date to the moment it went
+ * public. YouTube now reports 2026-08-01, so that is what goes here. (The 94
+ * accumulated views did carry over.)
+ *
+ * NOTE: the same 102-second clip exists three times on the channel —
+ * M8qQNuZUiIs (the one used here), 1FAci0DwumA, and erD8sqSalJY ("Excavator
+ * foot"), which this page embedded until recently. Three uploads of one clip
+ * split their own view counts and search signals. This one is the keeper: it
+ * has the most views and by far the better title, describing the problem a
+ * buyer searches for rather than our product name, which loses to excavator
+ * foot pedals.
  */
 const videoJsonLd = {
   "@context": "https://schema.org",
@@ -114,7 +120,7 @@ const videoJsonLd = {
   description:
     "Working prototype of the patented Excavator Foot on a Caterpillar 305 mini excavator, turning in place on dirt and pavement without scrubbing the tracks. U.S. Patent No. 12,679,457.",
   thumbnailUrl: ["https://i.ytimg.com/vi/M8qQNuZUiIs/maxresdefault.jpg"],
-  uploadDate: "2023-11-11T09:52:05-08:00",
+  uploadDate: "2026-08-01T11:34:52-07:00",
   duration: "PT1M42S",
   embedUrl: "https://www.youtube.com/embed/M8qQNuZUiIs",
   contentUrl: "https://www.youtube.com/watch?v=M8qQNuZUiIs",
