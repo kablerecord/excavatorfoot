@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 
 import { SITE_URL } from "@/lib/site";
+import { PATENT } from "@/lib/patent";
 
 /**
  * Product structured data for the Excavator Foot itself.
@@ -236,7 +237,31 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="mt-8 text-center">
+          {/*
+            🚨 THE FOOTAGE CARRIES A "PATENT PENDING" WATERMARK ON EVERY FRAME.
+            It was cut before the July 2026 grant and has not been re-rendered.
+            Left unexplained it reads to an evaluator — or to their IP counsel,
+            who is the person actually checking — as if the application never
+            issued, which is the exact opposite of the truth and buries the
+            single strongest fact about this product. Cheaper to say so than to
+            hope nobody notices. Delete this note and the paragraph below it
+            when the video is recut from the clean footage.
+          */}
+          <div className="mt-8 max-w-3xl mx-auto text-center space-y-3">
+            <p className="text-sm text-gray-300">
+              <span className="text-gray-500">Note on the footage:</span> this was
+              filmed before the patent issued, so the &ldquo;Patent Pending&rdquo; mark
+              on screen is out of date. It has since been granted as{" "}
+              <a
+                href={PATENT.usptoPdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-400 font-semibold hover:underline"
+              >
+                U.S. Patent No. {PATENT.number}
+              </a>{" "}
+              on {PATENT.grantDateDisplay}.
+            </p>
             <p className="text-sm text-gray-500 italic">
               An 8-ton (Cat 308) prototype is under final assembly.
               Detailed demonstration video available upon NDA execution.
