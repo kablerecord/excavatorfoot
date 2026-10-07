@@ -108,6 +108,6 @@ Initial response within 5 business days for qualified inquiries.
 
 ## Links
 
-- [Home](https://excavatorfoot.com): Demo video, problem framing, the four-step mechanism, engineering validation across three prototypes, OEM licensing positioning
+- [Home](https://excavatorfoot.com): Demo video, problem framing, the four-step mechanism, engineering validation (two working prototypes, a third cut and ready to assemble), OEM licensing positioning
 - [About](https://excavatorfoot.com/about): Origin story, prototype build history, IP position breakdown (apparatus claim, combination claim, design-around testing), inventor background
 - [Contact](https://excavatorfoot.com/contact): NDA download (PDF and Word), demo request and licensing/technical-package request flows
