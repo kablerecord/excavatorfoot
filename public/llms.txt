@@ -46,7 +46,7 @@ The 308 prototype is the size threshold where right-of-way contractors, urban in
 
 ## Intellectual Property
 
-- **U.S. Patent Number**: 12,679,457 (https://patents.google.com/patent/US12679457B2)
+- **U.S. Patent Number**: 12,679,457 (granted patent PDF from USPTO: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12679457)
 - **Filed**: March 4, 2024 (with priority to provisional 63/598,078 filed November 11, 2023)
 - **Status**: **Granted July 14, 2026.** Eleven claims. With 346 days of patent term adjustment, the term runs to February 2045. Entity status: Micro. Prosecuted by Patent Agent Bruce A. Lev (Reg. 58,594).
 - **Inventor**: Kable Darren Record
