@@ -8,7 +8,7 @@ export const metadata = {
   title:
     "About — The Contractor Who Patented a Fix for Excavator Turf Damage | Excavator Foot",
   description:
-    "How a working contractor tired of tearing up customers' lawns designed, prototyped and patented a mechanism that lets a tracked excavator turn in place. Three prototypes, 2- to 8-ton class, U.S. Patent No. 12,679,457.",
+    "How a working contractor tired of tearing up customers' lawns designed, prototyped and patented a mechanism that lets a tracked excavator turn in place. Working prototypes on 2- and 5-ton machines, U.S. Patent No. 12,679,457.",
   alternates: { canonical: "/about" },
 };
 
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 <span className="text-yellow-400 font-semibold text-sm">The Build</span>
               </div>
               <h2 className="text-4xl font-bold mb-6 text-white">
-                Three prototypes. Three machine classes.
+                Two working prototypes. A third in parts.
               </h2>
               <p className="text-lg text-gray-300 mb-4">
                 The first prototype was built and operated on a 2-ton Cat 302 to validate the
@@ -95,7 +95,7 @@ export default function AboutPage() {
                 video shows the 305 cycling through the full operational sequence.
               </p>
               <p className="text-lg text-gray-300 mb-6">
-                The third prototype, on a Cat 308 (8-ton class), is in final assembly. At that
+                The third prototype, on a Cat 308 (8-ton class), is cut and ready to assemble. At that
                 size, the mechanism is no longer compact-equipment scale — it&apos;s the size used
                 by right-of-way contractors, urban infill builders, and infrastructure crews.
                 That&apos;s the size that matters to the OEM conversation.

@@ -9,8 +9,9 @@ const nextConfig: NextConfig = {
       // store paths as 404s. The Excavator Foot is licensed to manufacturers
       // and can't be ordered, and /turf-damage says so plainly ("you cannot
       // buy one yet; tell your dealer"), so that's the honest landing for
-      // anyone holding an old link. Absolute destination and listed before the www rule, so
-      // www.excavatorfoot.com/product-page/... is one hop, not two.
+      // anyone holding an old link. Absolute destination and listed before
+      // the www rule, so www.excavatorfoot.com/product-page/... is one hop,
+      // not two.
       ...[
         "/product-page/caterpillar-305-foot",
         "/product-page/caterpillar-308-foot",

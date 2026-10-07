@@ -414,7 +414,8 @@ export default function TurfDamagePage() {
               <p className="text-lg text-gray-300">
                 It is covered by U.S. Patent No. {PATENT.number} (
                 <em>{PATENT.title}</em>, granted {PATENT.grantDateDisplay}), and
-                has been built and run on 2-, 5- and 8-ton machines.
+                has been built and run on 2- and 5-ton machines. Parts for an 8-ton
+                version are cut and ready to assemble.
               </p>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden border border-yellow-400/30 glow-yellow">

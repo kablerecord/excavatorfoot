@@ -4,7 +4,7 @@
 
 ## Positioning
 
-This is **OEM licensing technology**, not a retail aftermarket product. The Excavator Foot is designed to be a factory-installable option on production tracked excavators in the 2-ton through 12-ton class range. Three working prototypes (on Caterpillar 302, 305, and 308 chassis) have been built and operated to validate the mechanism across machine classes.
+This is **OEM licensing technology**, not a retail aftermarket product. The Excavator Foot is designed to be a factory-installable option on production tracked excavators in the 2-ton through 12-ton class range. Two working prototypes (on Caterpillar 302 and 305 chassis) have been built and operated to validate the mechanism. Parts for a third, on a Caterpillar 308, are cut and ready to assemble; it has not been run yet.
 
 ## The Problem It Solves
 
@@ -36,13 +36,13 @@ Bucket-free stabilization has also been prototyped and tested by the inventor: a
 
 ## Engineering Validation
 
-Three working prototypes have been built and operated:
+Two working prototypes have been built and operated, and a third is in parts:
 
 - **2-ton class** — Caterpillar 302 — mechanism geometry validated, operator sequence proven
 - **5-ton class** — Caterpillar 305 — full operational cycle on dirt and pavement, featured in the public demonstration video at https://excavatorfoot.com/#demo
-- **8-ton class** — Caterpillar 308 — production-grade machined parts in final assembly; live demonstrations scheduled as assembly completes
+- **8-ton class** — Caterpillar 308 — production-grade machined parts, cut and ready to assemble; not yet assembled or run
 
-The 308 prototype is the size threshold where right-of-way contractors, urban infill builders, and infrastructure crews operate. It is the prototype that demonstrates the mechanism scales to the machine classes OEMs ship in volume.
+The 308 prototype is the size threshold where right-of-way contractors, urban infill builders, and infrastructure crews operate. It will be the prototype that demonstrates the mechanism scales to the machine classes OEMs ship in volume.
 
 ## Intellectual Property
 
@@ -69,7 +69,7 @@ The patent includes both an apparatus claim (claim 1 — the mechanism itself) a
 - Full claim chart and prosecution history
 - Royalty model and territory pricing
 - Manufacturing cost analysis
-- Detailed 308 demonstration video
+- Detailed demonstration video
 
 A mutual NDA template is available for download at https://excavatorfoot.com/contact (PDF and editable Word formats). Evaluators may also use their own NDA template if preferred.
 
@@ -109,5 +109,5 @@ Initial response within 5 business days for qualified inquiries.
 ## Links
 
 - [Home](https://excavatorfoot.com): Demo video, problem framing, the four-step mechanism, engineering validation across three prototypes, OEM licensing positioning
-- [About](https://excavatorfoot.com/about): Origin story, three-prototype build history, IP position breakdown (apparatus claim, combination claim, design-around testing), inventor background
+- [About](https://excavatorfoot.com/about): Origin story, prototype build history, IP position breakdown (apparatus claim, combination claim, design-around testing), inventor background
 - [Contact](https://excavatorfoot.com/contact): NDA download (PDF and Word), demo request and licensing/technical-package request flows

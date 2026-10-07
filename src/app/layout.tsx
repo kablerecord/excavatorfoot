@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title:
     "Excavator Foot — Turn a Tracked Excavator in Place, Without Tearing Up the Ground",
   description:
-    "Patented hydraulic foot that lets a tracked excavator pivot in place instead of skid-turning — no torn turf, no gouged asphalt, no undercarriage scrub. Proven on 2-, 5- and 8-ton machines. U.S. Patent No. 12,679,457. Available for OEM licensing.",
+    "Patented hydraulic foot that lets a tracked excavator pivot in place instead of skid-turning — no torn turf, no gouged asphalt, no undercarriage scrub. Proven on 2- and 5-ton machines. U.S. Patent No. 12,679,457. Available for OEM licensing.",
   keywords: [
     "excavator turf damage",
     "excavator lawn damage",

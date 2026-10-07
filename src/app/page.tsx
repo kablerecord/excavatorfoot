@@ -70,11 +70,12 @@ const productJsonLd = {
     {
       "@type": "PropertyValue",
       // Two different claims, kept apart so the markup says exactly what the
-      // page says: built and run on 2- to 8-ton machines (the hero and the
-      // validation section), and designed to fit 2- to 12-ton (the "For
-      // Manufacturers" section). One "2-ton to 12-ton" range read as proven.
+      // page says: built and run on 2- and 5-ton machines (the Cat 308's
+      // parts are cut but not assembled), and designed to fit 2- to 12-ton
+      // (the "For Manufacturers" section). One "2-ton to 12-ton" range read
+      // as proven.
       name: "Proven Machine Class Range",
-      value: "2-ton to 8-ton tracked excavators",
+      value: "2-ton to 5-ton tracked excavators",
     },
     {
       "@type": "PropertyValue",
@@ -202,7 +203,7 @@ export default function HomePage() {
               heading on its own turntable. No counter-rotating. No torn turf. No plywood.
             </p>
             <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-3xl mx-auto">
-              Built and run on 2-, 5-, and 8-ton machines. Available for OEM licensing.
+              Built and run on 2- and 5-ton machines; an 8-ton version is cut and ready to assemble. Available for OEM licensing.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -232,8 +233,8 @@ export default function HomePage() {
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Working prototype on a Caterpillar 305 mini excavator, turning on dirt and
-              pavement without scrubbing the tracks. The same mechanism scales from 2-ton
-              to 8-ton machines.
+              pavement without scrubbing the tracks. The same mechanism is designed to scale
+              across the 2- to 12-ton range.
             </p>
           </div>
 
@@ -272,7 +273,7 @@ export default function HomePage() {
               on {PATENT.grantDateDisplay}.
             </p>
             <p className="text-sm text-gray-500 italic">
-              An 8-ton (Cat 308) prototype is under final assembly.
+              The parts for an 8-ton (Cat 308) prototype are cut and ready to assemble.
               Detailed demonstration video available upon NDA execution.
             </p>
           </div>
@@ -458,12 +459,13 @@ export default function HomePage() {
               <span className="text-blue-400 font-semibold text-sm">Engineering Validation</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Three working prototypes.<br />
-              <span className="gradient-text">2-ton to 8-ton class.</span>
+              Two working prototypes.<br />
+              <span className="gradient-text">2-ton and 5-ton class.</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              The mechanism has been built and operated across three machine classes, validating the
-              load math, hydraulic geometry, and structural design at the sizes OEMs ship in volume.
+              The mechanism has been built and operated on two machine classes, validating the load
+              math, hydraulic geometry, and structural design. Parts for an 8-ton prototype are cut
+              and ready to assemble.
             </p>
           </div>
 
@@ -534,15 +536,15 @@ export default function HomePage() {
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2 text-white">8-ton class</h3>
-                <p className="text-gray-400 text-sm mb-4">Caterpillar 308 — final assembly underway</p>
+                <p className="text-gray-400 text-sm mb-4">Caterpillar 308 — parts cut, not yet assembled</p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Production-grade machined parts
+                    Production-grade machined parts, ready to assemble
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Live demonstrations scheduled as final assembly completes
+                    Not yet run; demonstrations once it is assembled
                   </li>
                 </ul>
               </div>
@@ -726,7 +728,7 @@ export default function HomePage() {
             <div className="bg-black/40 border border-gray-800 rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-3 text-white">Schedule a Demo</h3>
               <p className="text-gray-400 mb-6 text-sm">
-                See the 308 prototype in person, walk through the mechanism, and ask
+                See a working prototype in person, walk through the mechanism, and ask
                 engineering questions live. Best for early-stage interest.
               </p>
               <Link

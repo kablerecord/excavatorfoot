@@ -88,8 +88,8 @@ export default function OpengraphImage() {
               maxWidth: 900,
             }}
           >
-            No skid-turn, no torn turf, no undercarriage scrub. Proven on 2-,
-            5- and 8-ton machines.
+            No skid-turn, no torn turf, no undercarriage scrub. Proven on 2- and
+            5-ton machines.
           </div>
         </div>
 
