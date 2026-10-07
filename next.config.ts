@@ -3,6 +3,23 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // Old store URLs → /turf-damage, permanent (308).
+      //
+      // The site used to be a storefront, and Google still crawls these three
+      // as 404s. The Excavator Foot is licensed to manufacturers and can't be
+      // ordered, and /turf-damage says so plainly ("you cannot buy one yet;
+      // tell your dealer"), so that's the honest landing for anyone holding an
+      // old link. Absolute destination and listed before the www rule, so
+      // www.excavatorfoot.com/product-page/... is one hop, not two.
+      ...[
+        "/product-page/caterpillar-305-foot",
+        "/product-page/caterpillar-308-foot",
+        "/category/all-products",
+      ].map((source) => ({
+        source,
+        destination: "https://excavatorfoot.com/turf-damage",
+        permanent: true,
+      })),
       // www → apex, permanent (301).
       //
       // Both hostnames served the full site with a 200 and an identical ETag,
