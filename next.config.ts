@@ -5,16 +5,18 @@ const nextConfig: NextConfig = {
     return [
       // Old store URLs → /turf-damage, permanent (308).
       //
-      // The site used to be a storefront, and Google still crawls these three
-      // as 404s. The Excavator Foot is licensed to manufacturers and can't be
-      // ordered, and /turf-damage says so plainly ("you cannot buy one yet;
-      // tell your dealer"), so that's the honest landing for anyone holding an
-      // old link. Absolute destination and listed before the www rule, so
+      // The site used to be a storefront, and Google still crawls the old
+      // store paths as 404s. The Excavator Foot is licensed to manufacturers
+      // and can't be ordered, and /turf-damage says so plainly ("you cannot
+      // buy one yet; tell your dealer"), so that's the honest landing for
+      // anyone holding an old link. Absolute destination and listed before the www rule, so
       // www.excavatorfoot.com/product-page/... is one hop, not two.
       ...[
         "/product-page/caterpillar-305-foot",
         "/product-page/caterpillar-308-foot",
         "/category/all-products",
+        // Bare form of the 308 store path, which also 404'd.
+        "/caterpillar-308-foot",
       ].map((source) => ({
         source,
         destination: "https://excavatorfoot.com/turf-damage",
