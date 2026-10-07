@@ -13,9 +13,9 @@ import { SITE_URL } from "@/lib/site";
  */
 const LAST_MODIFIED = {
   home: "2026-08-01",
-  turfDamage: "2026-08-01",
+  turfDamage: "2026-10-07",
   about: "2026-07-26",
-  contact: "2026-07-26",
+  contact: "2026-10-07",
 } as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

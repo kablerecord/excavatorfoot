@@ -43,7 +43,7 @@ export const metadata = {
   title:
     "Why Excavators Tear Up Lawns — and What Actually Stops It | Excavator Foot",
   description:
-    "Track marks, torn turf and gouged sod come from one thing: counter-rotating to change heading. Here is what actually causes it, what operators do about it today — mats, track choice, technique, the bucket-lift trick — and what each one really costs.",
+    "Track marks, torn turf and gouged sod come from one thing: counter-rotating to change heading. Here is what causes it, what operators do about it today, what each fix really costs, and how to repair the scars.",
   alternates: { canonical: "/turf-damage" },
 };
 
@@ -58,13 +58,13 @@ const articleJsonLd = {
   "@id": `${SITE_URL}/turf-damage#article`,
   headline: "Why Excavators Tear Up Lawns — and What Actually Stops It",
   description:
-    "What causes excavator turf damage, what operators do about it today, and what each method actually costs.",
+    "What causes excavator turf damage, what operators do about it today, what each method actually costs, and how to repair track scars in grass.",
   author: { "@id": `${SITE_URL}/#organization` },
   publisher: { "@id": `${SITE_URL}/#organization` },
   mainEntityOfPage: `${SITE_URL}/turf-damage`,
   inLanguage: "en-US",
   datePublished: "2026-08-01",
-  dateModified: "2026-08-01",
+  dateModified: "2026-10-07",
 };
 
 const METHODS = [
@@ -106,6 +106,29 @@ const METHODS = [
       "Dry, firm, dormant turf recovers far better than wet turf. Frozen ground is close to bulletproof. Scheduling the finished-surface portion for the right conditions is free.",
     costs:
       "You rarely control the schedule. Wet spring ground is when the damage is worst and when a lot of the work happens anyway.",
+  },
+];
+
+/**
+ * Repair steps for the "Fixing track scars in grass" section. Written for a
+ * homeowner or a crew member with a rake and a wheelbarrow, not a landscaper.
+ */
+const REPAIR_STEPS = [
+  {
+    step: "Rake",
+    text: "Rake the pressed grass upright and pull out loose clods. On a torn scar, lift the loose sod off. If a piece is still green and in one strip, set it aside in the shade, because it can go back down.",
+  },
+  {
+    step: "Fill the ruts",
+    text: "Loosen the bottom of each rut with a garden fork so new soil bonds to the old. Fill to grade with screened topsoil, or topsoil mixed with compost, and leave it slightly high because it settles. Don't fill with clay spoil from the dig; grass struggles in it.",
+  },
+  {
+    step: "Reseed or sod",
+    text: "Pressed scars: spread seed that matches the lawn, then cover it with about a quarter inch of topsoil. Torn scars: cut the damaged area out square with a flat spade, lay sod (or the strips you saved) level with the lawn around it, and butt the seams tight.",
+  },
+  {
+    step: "Roll and water",
+    text: "Roll or tamp it lightly so seed and sod are pressed into the soil. Then water every day, lightly for seed and deeply for sod, until it roots. Keep vehicles and foot traffic off it until then.",
   },
 ];
 
@@ -240,22 +263,96 @@ export default function TurfDamagePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="mt-10 bg-gray-900/50 border border-gray-800 rounded-xl p-6 md:p-8">
-            <h3 className="text-xl font-bold mb-3 text-white">
-              And when it goes wrong anyway
-            </h3>
-            <p className="text-gray-300 leading-relaxed">
-              Light scarring usually recovers on its own if the root mat is
-              intact — rake it flat, topdress with screened soil, seed and keep
-              it watered. Where the sod has been torn loose and rolled up, it
-              will not knit back down; cut the damaged area out square, fill to
-              grade with topsoil and lay new sod. Doing this well on one
-              residential job routinely costs more than a full day of machine
-              time, which is why it belongs in the bid rather than in the
-              apology.
-            </p>
-          </div>
+      {/* Repair. "how to fix excavator tracks in grass" is the one query
+          Search Console names with real volume (Jul–Oct 2026, position ~7.5),
+          and the page answered it in a single paragraph. This replaces that
+          paragraph. */}
+      <section id="fixing-track-scars" className="px-4 py-12">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            Fixing track scars in grass
+          </h2>
+          <p className="text-lg text-gray-300 mb-4">
+            First look at what kind of scar you have. If the grass is pressed
+            flat or scuffed but still rooted, it is a{" "}
+            <strong className="text-white">pressed scar</strong>, and it mostly
+            needs help standing back up. If the sod has been sheared loose,
+            rolled up or pushed into a ridge with bare soil showing, it is a{" "}
+            <strong className="text-white">torn scar</strong>. That sod will not
+            knit back down by itself.
+          </p>
+
+          <ol className="space-y-5 mb-10">
+            {REPAIR_STEPS.map(({ step, text }, i) => (
+              <li
+                key={step}
+                className="bg-gray-900/50 border border-gray-800 rounded-xl p-6"
+              >
+                <h3 className="text-lg font-bold mb-2 text-white">
+                  {i + 1}. {step}
+                </h3>
+                <p className="text-gray-300 leading-relaxed">{text}</p>
+              </li>
+            ))}
+          </ol>
+
+          <h3 className="text-2xl font-bold mb-3 text-white">Timing</h3>
+          <ul className="list-disc pl-6 space-y-2 text-gray-300 mb-10">
+            <li>
+              Do it the same day if you can. Torn sod lying on top of the lawn
+              dries out fast in summer heat, and once it browns it will not root.
+            </li>
+            <li>
+              If the ground is wet, wait until it is dry enough to rake without
+              smearing. Working mud just makes a flatter, harder scar.
+            </li>
+            <li>
+              Seed when the grass is growing. Cool-season lawns (fescue,
+              bluegrass, rye) take seed best in early fall or spring.
+              Warm-season lawns (Bermuda) take it in late spring and summer.
+              St. Augustine and most zoysia do not grow well from seed, so patch
+              those with sod or plugs.
+            </li>
+            <li>
+              Expect two to three weeks before new sod can take foot traffic,
+              and about three mowings before new seed looks like the rest of the
+              lawn.
+            </li>
+          </ul>
+
+          <h3 className="text-2xl font-bold mb-3 text-white">
+            Rough cost per scar
+          </h3>
+          <p className="text-gray-300 mb-4">
+            One spot turn on a 5-ton mini excavator leaves two curved scars,
+            roughly 15 to 25 square feet of damaged lawn together. Ballpark US
+            figures for fixing that one turn:
+          </p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-300 mb-4">
+            <li>
+              <strong className="text-white">Reseed it yourself:</strong> about
+              $10–25 in seed and topsoil, and 30–45 minutes.
+            </li>
+            <li>
+              <strong className="text-white">Re-sod it yourself:</strong> about
+              $15–40 in sod and topsoil (sod runs roughly 50¢ to $1 a square foot
+              by the pallet), and about an hour.
+            </li>
+            <li>
+              <strong className="text-white">Hire a landscaper:</strong> often
+              $150–400 for a small patch, because most charge a trip minimum no
+              matter how small the job.
+            </li>
+          </ul>
+          <p className="text-gray-300 leading-relaxed">
+            Prices vary by region and season, so treat these as a starting
+            point. The number that matters is the multiplier: a job with ten
+            spot turns on a lawn is 150 to 250 square feet of repair. That is
+            why it belongs in the bid rather than in the apology.
+          </p>
         </div>
       </section>
 
