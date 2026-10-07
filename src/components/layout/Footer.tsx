@@ -4,7 +4,9 @@ import { ExternalLink } from "lucide-react";
 import { PATENT } from "@/lib/patent";
 
 const SOCIALS = [
-  { label: "YouTube", href: "https://www.youtube.com/@kablerecord" },
+  // The channel the Cat 305 demo is on, matching sameAs in layout.tsx.
+  // @kablerecord is a different channel with the same display name.
+  { label: "YouTube", href: "https://www.youtube.com/@kablerecord6464" },
   { label: "Instagram", href: "https://instagram.com/kablerecord" },
   { label: "X", href: "https://twitter.com/kablerecord" },
   { label: "Facebook", href: "https://www.facebook.com/kablerecord" },
