@@ -10,3 +10,6 @@
  * No trailing slash: every consumer appends its own path.
  */
 export const SITE_URL = "https://excavatorfoot.com";
+
+/** The inbox that licensing and contact-form mail lands in. */
+export const CONTACT_EMAIL = "info@excavatorfoot.com";

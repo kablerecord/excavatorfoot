@@ -69,7 +69,16 @@ const productJsonLd = {
     },
     {
       "@type": "PropertyValue",
-      name: "Machine Class Range",
+      // Two different claims, kept apart so the markup says exactly what the
+      // page says: built and run on 2- to 8-ton machines (the hero and the
+      // validation section), and designed to fit 2- to 12-ton (the "For
+      // Manufacturers" section). One "2-ton to 12-ton" range read as proven.
+      name: "Proven Machine Class Range",
+      value: "2-ton to 8-ton tracked excavators",
+    },
+    {
+      "@type": "PropertyValue",
+      name: "Design Machine Class Range",
       value: "2-ton to 12-ton tracked excavators",
     },
     {

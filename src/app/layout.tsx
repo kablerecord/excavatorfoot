@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { SITE_URL } from "@/lib/site";
+import { CONTACT_EMAIL, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -84,8 +84,22 @@ export default function RootLayout({
           name: "Kable Record",
           url: "https://kablerecord.com",
         },
+        // Licensing questions come in by email; the form at /contact sends to
+        // the same inbox.
+        email: CONTACT_EMAIL,
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "licensing",
+          email: CONTACT_EMAIL,
+          url: `${SITE_URL}/contact?inquiry=licensing`,
+          availableLanguage: "en",
+        },
         sameAs: [
-          "https://www.youtube.com/@kablerecord",
+          // The channel the Cat 305 demo is published on (@kablerecord6464).
+          // This listed @kablerecord, a different channel with the same
+          // display name that does not hold the demo, so anything following
+          // the markup to verify the product found no video of it.
+          "https://www.youtube.com/@kablerecord6464",
           "https://instagram.com/kablerecord",
           "https://twitter.com/kablerecord",
           "https://www.facebook.com/kablerecord",
