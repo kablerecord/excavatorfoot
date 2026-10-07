@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 
 /**
- * /contact is a "use client" component (it needs useSearchParams to preselect
+ * /contact was a "use client" component (it needs useSearchParams to preselect
  * the inquiry type), and client components cannot export `metadata`. Without
  * this layout the page silently inherited the homepage's title and
  * description, so it competed with the homepage in search results while
- * describing itself as the homepage.
+ * describing itself as the homepage. The page is a server component now (only
+ * ContactForm.tsx is client-side), but the metadata stays here.
  */
 export const metadata: Metadata = {
   title:
