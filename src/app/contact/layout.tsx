@@ -10,9 +10,9 @@ import type { Metadata } from "next";
  */
 export const metadata: Metadata = {
   title:
-    "Contact — Request the Technical Package or a Demo | Excavator Foot",
+    "Contact: Request the Technical Package or the Footage | Excavator Foot",
   description:
-    "Talk to the inventor of the Excavator Foot. Request the NDA-gated engineering package — drawings, hydraulic schematics, load analysis, claim chart and royalty model — or schedule a working-prototype demonstration.",
+    "Talk to the inventor of the Excavator Foot. Request the NDA-gated engineering package — drawings, hydraulic schematics, load analysis, claim chart and royalty model — or ask for the prototype footage and a conversation about licensing.",
   alternates: { canonical: "/contact" },
 };
 

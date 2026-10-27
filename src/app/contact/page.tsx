@@ -18,7 +18,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Two paths forward — pick the one that matches where you are.
-            Detailed technical materials are NDA-gated; a live demo is not.
+            Detailed technical materials are NDA-gated; the footage and a first conversation are not.
           </p>
         </div>
       </section>
@@ -29,15 +29,14 @@ export default function ContactPage() {
           <div className="bg-gray-900/50 border border-gray-800 rounded-xl p-6">
             <div className="flex items-center gap-3 mb-3">
               <Calendar className="text-yellow-400" size={22} />
-              <h3 className="text-xl font-bold text-white">Schedule a Demo</h3>
+              <h3 className="text-xl font-bold text-white">Footage and a Conversation</h3>
             </div>
             <p className="text-gray-400 text-sm mb-3">
-              Walk through the mechanism in person, see a prototype operate, and ask engineering
-              questions live. No NDA required — what you see in person is what we already show
-              publicly in the demo video.
+              Get the full prototype footage, the drawings and the force numbers, and talk
+              through the mechanism and what a license could look like.
             </p>
             <p className="text-gray-500 text-xs">
-              Use the form below — select &quot;Demo Request&quot; as the inquiry type.
+              Use the form below — select &quot;Footage and a Conversation&quot; as the inquiry type.
             </p>
           </div>
 

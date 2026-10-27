@@ -64,7 +64,7 @@ const articleJsonLd = {
   mainEntityOfPage: `${SITE_URL}/turf-damage`,
   inLanguage: "en-US",
   datePublished: "2026-08-01",
-  dateModified: "2026-10-07",
+  dateModified: "2026-10-27",
 };
 
 const METHODS = [
@@ -414,15 +414,16 @@ export default function TurfDamagePage() {
               <p className="text-lg text-gray-300">
                 It is covered by U.S. Patent No. {PATENT.number} (
                 <em>{PATENT.title}</em>, granted {PATENT.grantDateDisplay}), and
-                has been built and run on 2- and 5-ton machines. Parts for an 8-ton
-                version are cut and ready to assemble.
+                two prototypes have been built and run on 2- and 5-ton machines. An
+                8-ton version is cut and in the shop.
               </p>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden border border-yellow-400/30 glow-yellow">
               <Image
-                src="/images/foot in the street.jpg"
-                alt="The Excavator Foot prototype extended beneath an excavator"
+                src="/images/footage/foot-on-grass.jpg"
+                alt="The Excavator Foot lowered onto a grass lawn under an excavator, its round pad flat on the turf between the tracks"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -467,9 +468,9 @@ export default function TurfDamagePage() {
                 Watch it turn in place
               </h3>
               <p className="text-gray-400 mb-6 text-sm">
-                A working prototype on a Cat 305, cycling through the full
-                sequence on dirt and pavement. Under two minutes, no narration
-                needed.
+                Prototype footage, filmed in 2023: the foot lowers, the tracks
+                lift off the asphalt and the machine turns in place, then the
+                same on grass and dirt. 45 seconds, captioned.
               </p>
               <Link
                 href="/#demo"

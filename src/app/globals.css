@@ -99,7 +99,8 @@ html {
   border-radius: 12px;
 }
 
-.video-container iframe {
+.video-container iframe,
+.video-container video {
   position: absolute;
   top: 0;
   left: 0;

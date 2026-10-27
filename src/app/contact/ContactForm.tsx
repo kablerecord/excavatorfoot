@@ -174,7 +174,7 @@ export function ContactForm() {
           className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white focus:border-yellow-400 focus:outline-none transition-colors"
         >
           <option value="general">General Inquiry</option>
-          <option value="demo">Demo Request</option>
+          <option value="demo">Footage and a Conversation</option>
           <option value="licensing">Licensing / Technical Package</option>
           <option value="partnership">Partnership / Co-development</option>
         </select>

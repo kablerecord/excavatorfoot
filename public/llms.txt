@@ -4,7 +4,7 @@
 
 ## Positioning
 
-This is **OEM licensing technology**, not a retail aftermarket product. The Excavator Foot is designed to be a factory-installable option on production tracked excavators in the 2-ton through 12-ton class range. Two working prototypes (on Caterpillar 302 and 305 chassis) have been built and operated to validate the mechanism. Parts for a third, on a Caterpillar 308, are cut and ready to assemble; it has not been run yet.
+This is **OEM licensing technology**, not a retail aftermarket product. The Excavator Foot is designed to be a factory-installable option on production tracked excavators in the 2-ton through 12-ton class range. Two prototypes (on Caterpillar 302 and 305 chassis) have been built and run. Parts for a third, on a Caterpillar 308, are cut and in the shop, waiting on a rotary union; it has not been run yet.
 
 ## The Problem It Solves
 
@@ -36,11 +36,11 @@ Bucket-free stabilization has also been prototyped and tested by the inventor: a
 
 ## Engineering Validation
 
-Two working prototypes have been built and operated, and a third is in parts:
+Two prototypes have been built and run, and a third is in the shop:
 
-- **2-ton class** — Caterpillar 302 — mechanism geometry validated, operator sequence proven
-- **5-ton class** — Caterpillar 305 — full operational cycle on dirt and pavement, featured in the public demonstration video at https://excavatorfoot.com/#demo
-- **8-ton class** — Caterpillar 308 — production-grade machined parts, cut and ready to assemble; not yet assembled or run
+- **2-ton class** — Caterpillar 302 — mechanism geometry tested, operator sequence run start to finish
+- **5-ton class** — Caterpillar 305 — full operational cycle on dirt and pavement
+- **8-ton class** — Caterpillar 308 — machined parts cut and in the shop, waiting on a rotary union; not yet assembled or run
 
 The 308 prototype is the size threshold where right-of-way contractors, urban infill builders, and infrastructure crews operate. It will be the prototype that demonstrates the mechanism scales to the machine classes OEMs ship in volume.
 
@@ -58,7 +58,7 @@ The patent includes both an apparatus claim (claim 1 — the mechanism itself) a
 ## Available Materials
 
 **Public:**
-- Demonstration video on the Caterpillar 305 prototype
+- Prototype footage (45 seconds, filmed in 2023, captioned) at https://excavatorfoot.com/#demo: the foot lowers, the tracks lift off asphalt, the machine turns in place, then the same on grass and dirt. Direct file: https://excavatorfoot.com/videos/excavator-foot-turn-in-place.mp4
 - Operational sequence overview
 - Granted patent US 12,679,457 and public file history
 
@@ -102,12 +102,12 @@ His operating preference is to license patented mechanical inventions to OEMs th
 
 - **Website**: https://excavatorfoot.com
 - **Email**: info@excavatorfoot.com
-- **Two paths**: (a) schedule a demo (no NDA required) — see the prototype operate and ask engineering questions live; (b) request the technical package (NDA-gated) — drawings, claim chart, royalty model, and manufacturing cost analysis
+- **Two paths**: (a) start a conversation: the full footage, the drawings and the force numbers, and a talk about licensing; (b) request the technical package (NDA-gated) — drawings, claim chart, royalty model, and manufacturing cost analysis
 
 Initial response within 5 business days for qualified inquiries.
 
 ## Links
 
-- [Home](https://excavatorfoot.com): Demo video, problem framing, the four-step mechanism, engineering validation (two working prototypes, a third cut and ready to assemble), OEM licensing positioning
+- [Home](https://excavatorfoot.com): Demo video, problem framing, the four-step mechanism, engineering validation (two prototypes built and run, a third cut and in the shop), OEM licensing positioning
 - [About](https://excavatorfoot.com/about): Origin story, prototype build history, IP position breakdown (apparatus claim, combination claim, design-around testing), inventor background
-- [Contact](https://excavatorfoot.com/contact): NDA download (PDF and Word), demo request and licensing/technical-package request flows
+- [Contact](https://excavatorfoot.com/contact): NDA download (PDF and Word), conversation request and licensing/technical-package request flows

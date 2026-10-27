@@ -19,7 +19,6 @@ import {
 } from "lucide-react";
 
 import { SITE_URL } from "@/lib/site";
-import { PATENT } from "@/lib/patent";
 
 /**
  * Product structured data for the Excavator Foot itself.
@@ -74,7 +73,7 @@ const productJsonLd = {
       // parts are cut but not assembled), and designed to fit 2- to 12-ton
       // (the "For Manufacturers" section). One "2-ton to 12-ton" range read
       // as proven.
-      name: "Proven Machine Class Range",
+      name: "Built and Run Machine Class Range",
       value: "2-ton to 5-ton tracked excavators",
     },
     {
@@ -102,39 +101,30 @@ const productJsonLd = {
 };
 
 /**
- * VideoObject for the Cat 305 prototype demo, so the clip is eligible for video
- * rich results — footage of the mechanism working is the most persuasive asset
- * on this site and worth surfacing directly in search.
+ * VideoObject for the self-hosted demo cut, so the clip is eligible for video
+ * rich results. Footage of the mechanism turning the machine is the most
+ * persuasive asset on this site and worth surfacing directly in search.
  *
- * uploadDate is read from YouTube rather than estimated, and must match what
- * YouTube reports — Google cross-checks the two, and a VideoObject that
- * disagrees with the platform is worse than none.
- *
- * It says 2026-08-01 even though this footage was shot and first uploaded in
- * November 2023. The clip was unlisted until now, and flipping a video from
- * unlisted to public resets YouTube's publish date to the moment it went
- * public. YouTube now reports 2026-08-01, so that is what goes here. (The 94
- * accumulated views did carry over.)
- *
- * NOTE: the same 102-second clip exists three times on the channel —
- * M8qQNuZUiIs (the one used here), 1FAci0DwumA, and erD8sqSalJY ("Excavator
- * foot"), which this page embedded until recently. Three uploads of one clip
- * split their own view counts and search signals. This one is the keeper: it
- * has the most views and by far the better title, describing the problem a
- * buyer searches for rather than our product name, which loses to excavator
- * foot pedals.
+ * The file lives on this site (public/videos), so contentUrl points at it and
+ * there is no embedUrl. It replaced the YouTube embed M8qQNuZUiIs on Oct 27
+ * 2026: that older cut carried an out-of-date pre-grant watermark on
+ * every frame. This one is a fresh 45-second cut of the same November 2023
+ * prototype footage, with captions and no watermark. uploadDate is the day
+ * the file went up here.
  */
+const DEMO_VIDEO_PATH = "/videos/excavator-foot-turn-in-place.mp4";
+const DEMO_POSTER_PATH = "/images/footage/tracks-lifted-dirt.jpg";
+
 const videoJsonLd = {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  name: "Turning an excavator without using tracks — Excavator Foot prototype on a Cat 305",
+  name: "Turning an excavator in place without using the tracks: Excavator Foot prototype",
   description:
-    "Working prototype of the patented Excavator Foot on a Caterpillar 305 mini excavator, turning in place on dirt and pavement without scrubbing the tracks. U.S. Patent No. 12,679,457.",
-  thumbnailUrl: ["https://i.ytimg.com/vi/M8qQNuZUiIs/maxresdefault.jpg"],
-  uploadDate: "2026-08-01T11:34:52-07:00",
-  duration: "PT1M42S",
-  embedUrl: "https://www.youtube.com/embed/M8qQNuZUiIs",
-  contentUrl: "https://www.youtube.com/watch?v=M8qQNuZUiIs",
+    "Prototype of the patented Excavator Foot, filmed in 2023. The foot lowers under the machine, the tracks lift off the asphalt, and the excavator turns in place on the foot. Then the same on grass and dirt. U.S. Patent No. 12,679,457.",
+  thumbnailUrl: [`${SITE_URL}${DEMO_POSTER_PATH}`],
+  uploadDate: "2026-10-27",
+  duration: "PT45S",
+  contentUrl: `${SITE_URL}${DEMO_VIDEO_PATH}`,
 };
 
 export default function HomePage() {
@@ -150,13 +140,15 @@ export default function HomePage() {
       />
       {/* Hero */}
       <section className="relative pt-32 pb-24 px-4 overflow-hidden min-h-[760px] flex items-center">
-        {/* Background video — autoplay muted loop, falls back to poster image */}
+        {/* Background video: autoplay muted loop of the prototype turning on
+            asphalt. The poster is a still from the same take, so first paint
+            already shows the tracks lifted. */}
         <video
           autoPlay
           muted
           loop
           playsInline
-          poster="/images/foot in the street.jpg"
+          poster="/images/footage/tracks-lifted-asphalt.jpg"
           className="absolute inset-0 w-full h-full object-cover z-0 motion-reduce:hidden"
         >
           <source src="/videos/hero-loop.mp4" type="video/mp4" />
@@ -165,7 +157,7 @@ export default function HomePage() {
         {/* Static fallback for users with prefers-reduced-motion enabled */}
         <div className="absolute inset-0 hidden motion-reduce:block z-0">
           <Image
-            src="/images/foot in the street.jpg"
+            src="/images/footage/tracks-lifted-asphalt.jpg"
             alt=""
             fill
             className="object-cover"
@@ -203,7 +195,7 @@ export default function HomePage() {
               heading on its own turntable. No counter-rotating. No torn turf. No plywood.
             </p>
             <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-3xl mx-auto">
-              Built and run on 2- and 5-ton machines; an 8-ton version is cut and ready to assemble. Available for OEM licensing.
+              Two prototypes built and run on 2- and 5-ton machines. An 8-ton version is cut and in the shop. Available for OEM licensing.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -232,49 +224,30 @@ export default function HomePage() {
               See It <span className="gradient-text">Turn in Place</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Working prototype on a Caterpillar 305 mini excavator, turning on dirt and
-              pavement without scrubbing the tracks. The same mechanism is designed to scale
-              across the 2- to 12-ton range.
+              Prototype footage, filmed in 2023. The foot lowers, the tracks lift off the
+              asphalt, and the machine turns in place. Then the same on grass and dirt. The
+              mechanism is designed to scale across the 2- to 12-ton range.
             </p>
           </div>
 
           <div className="video-container glow-yellow">
-            <iframe
-              src="https://www.youtube.com/embed/M8qQNuZUiIs"
-              title="Turning an excavator without using tracks — Excavator Foot prototype on a Cat 305"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster={DEMO_POSTER_PATH}
+              width={1280}
+              height={720}
+              aria-label="Excavator Foot prototype turning an excavator in place on asphalt, grass and dirt"
+            >
+              <source src={DEMO_VIDEO_PATH} type="video/mp4" />
+            </video>
           </div>
 
-          {/*
-            🚨 THE FOOTAGE CARRIES A "PATENT PENDING" WATERMARK ON EVERY FRAME.
-            It was cut before the July 2026 grant and has not been re-rendered.
-            Left unexplained it reads to an evaluator — or to their IP counsel,
-            who is the person actually checking — as if the application never
-            issued, which is the exact opposite of the truth and buries the
-            single strongest fact about this product. Cheaper to say so than to
-            hope nobody notices. Delete this note and the paragraph below it
-            when the video is recut from the clean footage.
-          */}
-          <div className="mt-8 max-w-3xl mx-auto text-center space-y-3">
-            <p className="text-sm text-gray-300">
-              <span className="text-gray-500">Note on the footage:</span> this was
-              filmed before the patent issued, so the &ldquo;Patent Pending&rdquo; mark
-              on screen is out of date. It has since been granted as{" "}
-              <a
-                href={PATENT.usptoPdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-yellow-400 font-semibold hover:underline"
-              >
-                U.S. Patent No. {PATENT.number}
-              </a>{" "}
-              on {PATENT.grantDateDisplay}.
-            </p>
+          <div className="mt-8 max-w-3xl mx-auto text-center">
             <p className="text-sm text-gray-500 italic">
-              The parts for an 8-ton (Cat 308) prototype are cut and ready to assemble.
-              Detailed demonstration video available upon NDA execution.
+              Two prototypes built and run on 2- and 5-ton machines. An 8-ton (Cat 308)
+              version is cut and in the shop. Drawings and force numbers are available under NDA.
             </p>
           </div>
         </div>
@@ -416,6 +389,39 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Two frames from the 2023 prototype footage, matched to steps 2
+              and 3 so the sequence above has a picture of the real thing. */}
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
+            <figure className="bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden">
+              <Image
+                src="/images/footage/foot-down-close.jpg"
+                alt="The Excavator Foot lowered onto gravel under the middle of the machine, with both rubber tracks lifted off the ground"
+                width={1200}
+                height={676}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="w-full h-auto"
+              />
+              <figcaption className="p-4 text-sm text-gray-400">
+                <span className="text-yellow-400 font-semibold">Step 2.</span> The foot is down
+                and the tracks are off the ground.
+              </figcaption>
+            </figure>
+            <figure className="bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden">
+              <Image
+                src="/images/footage/mid-turn-asphalt.jpg"
+                alt="An excavator part way through turning in place on an asphalt street, its tracks held clear of the road"
+                width={1200}
+                height={676}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="w-full h-auto"
+              />
+              <figcaption className="p-4 text-sm text-gray-400">
+                <span className="text-yellow-400 font-semibold">Step 3.</span> Mid-turn on
+                asphalt. The tracks swing around above the road instead of scrubbing it.
+              </figcaption>
+            </figure>
+          </div>
+
           <div className="bg-gradient-to-r from-yellow-400/5 to-yellow-600/5 border border-yellow-400/30 rounded-2xl p-8 md:p-10">
             <div className="flex items-start gap-4 mb-4">
               <ShieldCheck className="text-yellow-400 flex-shrink-0 mt-1" size={28} />
@@ -459,13 +465,13 @@ export default function HomePage() {
               <span className="text-blue-400 font-semibold text-sm">Engineering Validation</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Two working prototypes.<br />
+              Two prototypes, built and run.<br />
               <span className="gradient-text">2-ton and 5-ton class.</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              The mechanism has been built and operated on two machine classes, validating the load
-              math, hydraulic geometry, and structural design. Parts for an 8-ton prototype are cut
-              and ready to assemble.
+              The mechanism has been built and run on two machine classes, testing the load
+              math, hydraulic geometry, and structural design. Parts for an 8-ton version are cut
+              and in the shop, waiting on a rotary union.
             </p>
           </div>
 
@@ -489,7 +495,7 @@ export default function HomePage() {
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Operator sequence proven
+                    Operator sequence run start to finish
                   </li>
                 </ul>
               </div>
@@ -540,11 +546,11 @@ export default function HomePage() {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Production-grade machined parts, ready to assemble
+                    Machined parts cut and in the shop
                   </li>
                   <li className="flex items-start gap-2 text-sm text-gray-300">
                     <CheckCircle2 className="text-yellow-400 flex-shrink-0 mt-0.5" size={16} />
-                    Not yet run; demonstrations once it is assembled
+                    Not yet run; waiting on a rotary union
                   </li>
                 </ul>
               </div>
@@ -726,16 +732,16 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-black/40 border border-gray-800 rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-3 text-white">Schedule a Demo</h3>
+              <h3 className="text-2xl font-bold mb-3 text-white">Start a Conversation</h3>
               <p className="text-gray-400 mb-6 text-sm">
-                See a working prototype in person, walk through the mechanism, and ask
-                engineering questions live. Best for early-stage interest.
+                Get the full footage, the drawings and the force numbers, and talk through
+                what a license could look like. Best for early-stage interest.
               </p>
               <Link
                 href="/contact?inquiry=demo"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-yellow-400 text-yellow-400 font-bold rounded-lg hover:bg-yellow-400/10 transition-all"
               >
-                Request a Demo <ArrowRight size={18} />
+                Start a Conversation <ArrowRight size={18} />
               </Link>
             </div>
 

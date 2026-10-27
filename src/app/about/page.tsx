@@ -8,7 +8,7 @@ export const metadata = {
   title:
     "About — The Contractor Who Patented a Fix for Excavator Turf Damage | Excavator Foot",
   description:
-    "How a working contractor tired of tearing up customers' lawns designed, prototyped and patented a mechanism that lets a tracked excavator turn in place. Working prototypes on 2- and 5-ton machines, U.S. Patent No. 12,679,457.",
+    "How a working contractor tired of tearing up customers' lawns designed, prototyped and patented a mechanism that lets a tracked excavator turn in place. Two prototypes built and run on 2- and 5-ton machines, U.S. Patent No. 12,679,457.",
   alternates: { canonical: "/about" },
 };
 
@@ -86,17 +86,18 @@ export default function AboutPage() {
                 <span className="text-yellow-400 font-semibold text-sm">The Build</span>
               </div>
               <h2 className="text-4xl font-bold mb-6 text-white">
-                Two working prototypes. A third in parts.
+                Two prototypes built and run. A third in the shop.
               </h2>
               <p className="text-lg text-gray-300 mb-4">
-                The first prototype was built and operated on a 2-ton Cat 302 to validate the
-                core geometry. The second on a 5-ton Cat 305 to confirm that the load math
-                and hydraulic timing scaled properly. Both work — and the public demonstration
-                video shows the 305 cycling through the full operational sequence.
+                The first prototype was built and run on a 2-ton Cat 302 to test the
+                core geometry. The second on a 5-ton Cat 305 to check that the load math
+                and hydraulic timing scaled properly. Both were run through the full sequence,
+                and the footage on the home page, filmed in 2023, shows the foot lowering, the
+                tracks lifting and the machine turning in place.
               </p>
               <p className="text-lg text-gray-300 mb-6">
-                The third prototype, on a Cat 308 (8-ton class), is cut and ready to assemble. At that
-                size, the mechanism is no longer compact-equipment scale — it&apos;s the size used
+                The third, on a Cat 308 (8-ton class), is cut and in the shop, waiting on a rotary
+                union. At that size, the mechanism is no longer compact-equipment scale — it&apos;s the size used
                 by right-of-way contractors, urban infill builders, and infrastructure crews.
                 That&apos;s the size that matters to the OEM conversation.
               </p>

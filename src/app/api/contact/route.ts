@@ -6,7 +6,7 @@ const TO_EMAIL = process.env.TO_EMAIL || "info@excavatorfoot.com";
 
 const INQUIRY_SUBJECT: Record<string, string> = {
   licensing: "Technical Package Request (Licensing)",
-  demo: "Demo Request",
+  demo: "Footage and a Conversation",
   general: "General Inquiry",
   partnership: "Partnership Inquiry",
 };
